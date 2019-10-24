@@ -1,7 +1,3 @@
-[build]
-base = "groovin-music/"
-publish = "build/"
-command = "yarn build"
 
 [[redirects]]
 from = "/*"
