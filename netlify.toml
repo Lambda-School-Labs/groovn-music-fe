@@ -2,7 +2,7 @@
 
 [build]
 base = "groovin-music/"
-publish = "groovin-music/build/"
+publish = "build/"
 command = "yarn build"
 [[redirects]]
 from = "/*"
