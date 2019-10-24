@@ -1,20 +1,14 @@
 
 [build]
-
     base = "groovin-music/"
     publish = "groovin-music/build/
     command = "yarn build"
-
 [context.production]
-
     publish = "groovin-music/build/"    
     command = "yarn build"
-
 [context.staging] 
-  
   command = "echo 'staging'"
   base = "staging"
-
 [[redirects]]
 from = "/*"
 to = "/index.html"
