@@ -34,7 +34,7 @@ function ExchangeRates() {
     ));
 }
 
-const client = new ApolloClient({ //client ready to fetch data
+const client = new ApolloClient({ // client ready to fetch data
   uri: 'http://localhost:4000/graphql',
 });
 
