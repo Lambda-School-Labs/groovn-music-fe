@@ -39,7 +39,7 @@ const Hello = () => {
   const App = () => (
     <ApolloProvider client={client}>
         <div>
-            <h2>Connecting FE to BE!</h2>
+            <h2>Connected FE to BE</h2>
             <Hello></Hello>
         </div>
     </ApolloProvider>
