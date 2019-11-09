@@ -2,8 +2,8 @@ import React, { useState } from "react";
 const OnChange = e => {};
 
 function LandingPage() {
-	//const [usernameInput, setUsernameInput] = useState("");
-	//const [passwordInput, setPasswordInput] = useState("");
+	// const [usernameInput, setUsernameInput] = useState("");
+	// const [passwordInput, setPasswordInput] = useState("");
 
 	return (
 		<>
