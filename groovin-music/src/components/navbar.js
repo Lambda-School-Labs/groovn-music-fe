@@ -15,16 +15,16 @@ const Navbar = () => {
             <NavLink
                 activeClassName="navbar_link--active"
                 className="navbar_link"
-                to="/products"
+                to="/Sign-Up"
             >
-            products
+            Sign-Up
             </NavLink>
             <NavLink
                 activeClassName="navbar_link--active"
                 className="navbar_link"
-                to="/contacts"
+                to="/Log-In"
             >
-            contacts
+            Log-In
             </NavLink>
         </nav>
 
