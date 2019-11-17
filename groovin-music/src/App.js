@@ -1,5 +1,4 @@
 import React from 'react';
-import Navbar from '../components/navbar';
 import { Route } from 'react-router-dom';
 import ApolloClient from 'apollo-boost';
 
@@ -22,5 +21,37 @@ function App() {
     </ApolloProvider>
   );
 }
+
+// Below is a way to make the search bar functional
+
+// handleChange(e) => {
+//   let X = [];
+//   let newX = [];
+//   if (e.target.value !== "") {
+//     currentX = this.props.items;
+//     newX = currentX.filter(item => {
+//       const Y = item.toLowerCase();
+//       const filter = e.target.value.toLowerCase();
+//       return Y.includes(filter);
+//     });
+//   } else {
+//     newX = this.props.items;
+//     this.setState({
+//       filtered: newX
+//     });
+//   }
+// }
+
+// Below will bind the "this" keyword to it.  Inside of our constructor, after the state, below will bind the method
+
+// this.handleChange = this.handleChange.bind(this)
+
+// Below is the last piece to make search bar functional
+// <input
+//   type="text"
+//   className="input"
+//   onChange={this.handleChange}
+//   placeholder="Search ...."
+// />
 
 export default App;

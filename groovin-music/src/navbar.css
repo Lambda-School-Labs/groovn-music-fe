@@ -1,29 +1,28 @@
 .navbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 4px;
-    background-color: #eceff1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  background-color: #eceff1;
 }
 
 .navbar_link {
-    margin: 1em;
-    font-size: 2em;
-    font-family: 'Roboto', sans-serif;
-    cursor: pointer;
-    text-decoration: none;
-    letter-spacing: .3em;
-    text-indent: .3em;
-    color: #181818;
-    border-bottom: 3px solid transparent;
+  margin: 1em;
+  font-size: 2em;
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+  text-decoration: none;
+  letter-spacing: 0.3em;
+  text-indent: 0.3em;
+  color: #181818;
+  border-bottom: 3px solid transparent;
 }
 
 .navbar_link:hover {
-    transform: translateY(-2px);
+  transform: translateY(-2px);
 }
 
 .navbar_link--active {
-    border-bottom: 3px solid #29b6f6;
-    transition: border-bottom .5s ease-in-out;
+  border-bottom: 3px solid #29b6f6;
+  transition: border-bottom 0.5s ease-in-out;
 }
-

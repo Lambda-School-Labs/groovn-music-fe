@@ -1,0 +1,30 @@
+body {
+  background: rgb(4, 13, 43);
+}
+
+form {
+  font-size: 20px;
+}
+
+.Header {
+  color: rgb(219, 219, 231);
+  font-size: 38px;
+  text-align: center;
+  margin-top: 200px;
+}
+
+.search {
+  text-align: center;
+}
+
+.tagline {
+  color: rgb(224, 170, 179);
+  text-align: center;
+  font-size: 25px;
+  margin-top: -55px;
+  margin-bottom: 70px;
+}
+
+.top-content {
+  text-align: center;
+}
