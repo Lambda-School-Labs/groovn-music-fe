@@ -1,12 +1,19 @@
+body {
+  background: rgb(4, 13, 43);
+}
+
+form {
+  font-size: 20px;
+}
+
 .Header {
-  color: black;
+  color: silver;
   font-size: 48px;
   text-align: center;
-  margin-top: 20px;
-  font-family: 'Rock Salt', cursive;
 }
 
 .tagline {
+  color: lightgray;
   text-align: center;
   font-size: 28px;
   margin-bottom: 20px;

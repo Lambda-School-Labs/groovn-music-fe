@@ -9,18 +9,22 @@ function LandingPage() {
 
   return (
     <>
-      <div className="Header">
-        <h1>GroovnMusic</h1>
-      </div>
-      <div className="tagline">
-        <h3>get into the groove!</h3>
-      </div>
-      <div className="Body">
-        <form>
-          <input type="text" placeholder="username"></input>
-          <input type="password" placeHolder="password"></input>
-        </form>
-      </div>
+      <body>
+
+        <div className="Header">
+          <h1>GroovnMusic</h1>
+        </div>
+        <div className="tagline">
+          <h3>get into the groove....</h3>
+        </div>
+        <div className="Body">
+          <form>
+            <input type="text" placeholder="username"></input>
+            <input type="password" placeHolder="password"></input>
+          </form>
+        </div>
+
+      </body>
     </>
   );
 }
