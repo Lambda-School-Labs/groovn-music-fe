@@ -1,5 +1,9 @@
-.header {
-    background-color: lightgray;
-    color: black;
+.Header {
+  color: black;
+  font-size: 48px;
+  text-align: center;
+}
 
+.Body {
+  text-align: center;
 }
