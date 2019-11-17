@@ -10,8 +10,10 @@ function LandingPage() {
   return (
     <>
       <div className="Header">
-        <h1>Groovn Music</h1>
-        <h3>just groove .....</h3>
+        <h1>GroovnMusic</h1>
+      </div>
+      <div className="tagline">
+        <h3>get into the groove!</h3>
       </div>
       <div className="Body">
         <form>

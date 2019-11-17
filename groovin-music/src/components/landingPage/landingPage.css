@@ -2,6 +2,14 @@
   color: black;
   font-size: 48px;
   text-align: center;
+  margin-top: 20px;
+  font-family: 'Rock Salt', cursive;
+}
+
+.tagline {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
 }
 
 .Body {
