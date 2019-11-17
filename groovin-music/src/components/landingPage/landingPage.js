@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import landingPage from './landingPage.css';  
-
+import './landingPage.css';
 
 const OnChange = e => {};
 
