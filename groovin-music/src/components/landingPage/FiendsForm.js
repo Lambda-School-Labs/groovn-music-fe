@@ -1,3 +1,9 @@
+////////////////////////////////////////////
+//  This file is just here for reference  //
+//  and will be deleted once its no longer//
+//  needed. NOT A PART OF THE PROJECT.    //
+////////////////////////////////////////////
+
 import { css, jsx } from '@emotion/core';
 import { useReducer } from 'react';
 import { useDispatch } from 'react-redux';

@@ -1,11 +1,15 @@
 import React, { useReducer } from 'react';
+import { Route } from 'react-router-dom';
 import Login from './Login';
+import Registration from './Registration.js';
 import './landingPage.css';
+import NavBar from '../NavBar/navbar.js';
 
 function LandingPage() {
   return (
     <>
       <body>
+        <NavBar />
         <div className="Header">
           <h1>GroovnMusic</h1>
         </div>
@@ -17,7 +21,8 @@ function LandingPage() {
           <input type="text" className="input" placeholder="Search ...." />
           <ul>...</ul>
         </div>
-        <Login />
+        <Route path="/Log-In" component={Login} />
+        <Route path="/Sign-Up" component={Registration} />
       </body>
     </>
   );
