@@ -35,4 +35,12 @@ function App() {
 
 // this.handleChange = this.handleChange.bind(this)
 
+// Below is the last piece to make search bar functional
+// <input
+//   type="text"
+//   className="input"
+//   onChange={this.handleChange}
+//   placeholder="Search ...."
+// />
+
 export default App;
