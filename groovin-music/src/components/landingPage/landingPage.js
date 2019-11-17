@@ -10,20 +10,24 @@ function LandingPage() {
   return (
     <>
       <body>
-
         <div className="Header">
           <h1>GroovnMusic</h1>
         </div>
         <div className="tagline">
           <h3>get into the groove....</h3>
         </div>
-        <div className="Body">
+
+        <div className="search">
+          <input type="text" className="input" placeholder="Search ...." />
+          <ul>...</ul>
+        </div>
+
+        <div className="top-content">
           <form>
             <input type="text" placeholder="username"></input>
             <input type="password" placeHolder="password"></input>
           </form>
         </div>
-
       </body>
     </>
   );

@@ -11,4 +11,24 @@ function App() {
   );
 }
 
+// Below is a way to make the search bar functional
+
+// handleChange(e) => {
+//   let X = [];
+//   let newX = [];
+//   if (e.target.value !== "") {
+//     currentX = this.props.items;
+//     newX = currentX.filter(item => {
+//       const Y = item.toLowerCase();
+//       const filter = e.target.value.toLowerCase();
+//       return Y.includes(filter);
+//     });
+//   } else {
+//     newX = this.props.items;
+//     this.setState({
+//       filtered: newX
+//     });
+//   }
+// }
+
 export default App;
