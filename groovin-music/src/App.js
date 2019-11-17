@@ -31,4 +31,8 @@ function App() {
 //   }
 // }
 
+// Below will bind the "this" keyword to it.  Inside of our constructor, after the state, below will bind the method
+
+// this.handleChange = this.handleChange.bind(this)
+
 export default App;
