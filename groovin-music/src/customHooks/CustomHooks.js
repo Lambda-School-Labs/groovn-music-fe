@@ -7,18 +7,20 @@ export const useSignUpForm = (callback) => {
         if (event) {
             console.log('fired');
             event.preventDefault();
+            callback();
         }
     }
     
     const handleInputChange = (event) => {
-        console.log(event.target.value);
         event.persist();
         setInputs(inputs => ({...inputs, [event.target.name]:event.target.value}));
     }
+
     return {
         handleSubmit,
         handleInputChange,
         inputs
     };
 }
+
 

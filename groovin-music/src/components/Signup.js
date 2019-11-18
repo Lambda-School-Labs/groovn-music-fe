@@ -3,8 +3,11 @@ import { useSignUpForm } from '../customHooks/CustomHooks.js';
 
 export default function Signup() {
 
-    const { inputs, handleInputChange, handleSubmit } = useSignUpForm();
+    const { inputs, handleInputChange, handleSubmit } = useSignUpForm(login);
 
+    function login() {
+       console.log(inputs)
+    }
 
     return (
         <div>
