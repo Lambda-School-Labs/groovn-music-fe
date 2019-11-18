@@ -5,6 +5,7 @@ export default function Signup() {
 
     const { inputs, handleInputChange, handleSubmit } = useSignUpForm();
 
+
     return (
         <div>
             <form onSubmit={handleSubmit}>
@@ -30,3 +31,4 @@ export default function Signup() {
         </div>
     )
 }
+

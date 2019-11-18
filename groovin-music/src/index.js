@@ -7,6 +7,9 @@ import ApolloClient from 'apollo-boost';
 import { gql } from 'apollo-boost'; //or you can use `import gql from 'graphql-tag';
 import { render } from 'react-dom';
 import { useQuery } from '@apollo/react-hooks';
+import Signup from './components/Signup.js';
+
+
 
 import { ApolloProvider } from '@apollo/react-hooks';
 
@@ -23,24 +26,25 @@ const HELLO_QUERY = gql`
   }
 `;
 
-const Hello = () => {
-  const { loading, data } = useQuery(HELLO_QUERY, {
-    notifyOnNetworkStatusChange: true,
-  });
+// const Hello = () => {
+//   const { loading, data } = useQuery(HELLO_QUERY, {
+//     notifyOnNetworkStatusChange: true,
+//   });
 
-  if (loading) return <div>Loading...</div>;
+//   if (loading) return <div>Loading...</div>;
 
-  const { world } = data.hello;  
-    return (
-  <div>{ world }</div>
-  );
-};
+//   const { world } = data.hello;  
+//     return (
+//   <div>{`${ world }`}</div>
+//   );
+// };
 
   const App = () => (
     <ApolloProvider client={client}>
         <div>
             <h2>Connected FE to BE</h2>
-            <Hello></Hello>
+            <Signup />
+             {/* <Hello></Hello>  */}
         </div>
     </ApolloProvider>
 );
