@@ -2,20 +2,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 2px;
-  background-color: #eceff1;
+  border-radius: 4px;
+  background-color: rgb(4, 13, 43);
 }
 
 .navbar_link {
-  margin: 1em;
-  font-size: 2em;
+  margin: .75em;
+  font-size: 1.5em;
   font-family: 'Roboto', sans-serif;
   cursor: pointer;
   text-decoration: none;
   letter-spacing: 0.3em;
   text-indent: 0.3em;
-  color: #181818;
-  border-bottom: 3px solid transparent;
+  color: rgb(224, 170, 179);
+  border-bottom: 2px solid transparent;
 }
 
 .navbar_link:hover {
