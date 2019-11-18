@@ -16,7 +16,7 @@ const HELLO_QUERY = gql`
   }
 `;
 
-const hello = () => {
+const Hello = () => {
   const { loading, data } = useQuery(HELLO_QUERY, {
     notifyOnNetworkStatusChange: true,
   });
