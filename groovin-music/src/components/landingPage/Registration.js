@@ -1,4 +1,5 @@
 import React, { useReducer } from 'react';
+import './landingPage.css';
 
 function Registration() {
   const [userInput, setUserInput] = useReducer(
@@ -9,6 +10,8 @@ function Registration() {
       displayName: '',
       email: '',
       reEmail: '',
+      password: '',
+      rePassword: '',
     }
   );
 
@@ -19,8 +22,9 @@ function Registration() {
 
   return (
     <div>
-      <form>
+      <form className="registration">
         <input
+          className="reg-input"
           type="text"
           placeholder="first name"
           name="firstName"
@@ -28,6 +32,7 @@ function Registration() {
           onChange={handleInput}
         />
         <input
+          className="reg-input"
           type="text"
           placeholder="last name"
           name="lastName"
@@ -35,6 +40,7 @@ function Registration() {
           onChange={handleInput}
         />
         <input
+          className="reg-input"
           type="text"
           placeholder="display name"
           name="displayName"
@@ -42,6 +48,7 @@ function Registration() {
           onChange={handleInput}
         />
         <input
+          className="reg-input"
           type="text"
           placeholder="email"
           name="email"
@@ -49,13 +56,30 @@ function Registration() {
           onChange={handleInput}
         />
         <input
+          className="reg-input"
           type="text"
           placeholder="re-enter email"
           name="reEmail"
           value={userInput.reEmail}
           onChange={handleInput}
         />
-        <button>Register</button>
+        <input
+          className="reg-input"
+          type="password"
+          placeholder="password"
+          name="password"
+          value={userInput.password}
+          onChange={handleInput}
+        />
+        <input
+          className="reg-input"
+          type="password"
+          placeholder="rePassword"
+          name="rePassword"
+          value={userInput.rePassword}
+          onChange={handleInput}
+        />
+        <button className="reg-input">Register</button>
       </form>
     </div>
   );

@@ -28,3 +28,12 @@ form {
 .top-content {
   text-align: center;
 }
+
+.registration {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.reg-input {
+}
