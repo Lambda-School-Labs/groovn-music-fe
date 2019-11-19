@@ -35,5 +35,16 @@ form {
   text-align: center;
 }
 
-.reg-input {
+.get-started {
+  width: 15rem;
+  height: 5rem;
+  border-radius: 50px;
+  background-color: #1db954;
+  border-color: #1db954;
+}
+
+.get-started a {
+  font-size: 25px;
+  text-decoration: none;
+  color: #ffff;
 }

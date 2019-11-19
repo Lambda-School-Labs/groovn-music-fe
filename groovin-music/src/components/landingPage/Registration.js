@@ -20,6 +20,18 @@ function Registration() {
     setUserInput({ [name]: value });
   };
 
+  const handleSubmit = () => {
+    setUserInput({
+      firstName: '',
+      lastName: '',
+      displayName: '',
+      email: '',
+      reEmail: '',
+      password: '',
+      rePassword: '',
+    });
+  };
+
   return (
     <div>
       <form className="registration">

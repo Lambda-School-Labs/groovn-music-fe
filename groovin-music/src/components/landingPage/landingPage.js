@@ -22,7 +22,6 @@ function LandingPage() {
           <ul>...</ul>
         </div>
         <Route path="/Log-In" component={Login} />
-        <Route path="/Sign-Up" component={Registration} />
       </body>
     </>
   );
