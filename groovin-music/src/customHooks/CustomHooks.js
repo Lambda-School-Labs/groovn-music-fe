@@ -8,6 +8,12 @@ export const useSignUpForm = (callback) => {
             console.log('fired');
             event.preventDefault();
             callback();
+            setInputs({
+                firstName: '',
+                lastName: '',
+                email: '',
+                password: ''
+            });
         }
     }
     
