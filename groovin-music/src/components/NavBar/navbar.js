@@ -27,20 +27,6 @@ const Navbar = () => {
       >
         View Plans
       </NavLink>
-      <NavLink
-        activeClassName="navbar_link--active"
-        className="navbar_link"
-        to="/Sign-Up"
-      >
-        Sign-Up
-      </NavLink>
-      <NavLink
-        activeClassName="navbar_link--active"
-        className="navbar_link"
-        to="/Log-In"
-      >
-        Log-In
-      </NavLink>
     </nav>
   );
 };

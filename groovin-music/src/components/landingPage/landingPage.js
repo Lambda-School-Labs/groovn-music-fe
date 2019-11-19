@@ -1,7 +1,6 @@
 import React, { useReducer } from 'react';
 import { Route } from 'react-router-dom';
-import Login from './Login';
-import Registration from './Registration.js';
+import LandingHome from './LandingHome';
 import './landingPage.css';
 import NavBar from '../NavBar/navbar.js';
 
@@ -21,7 +20,7 @@ function LandingPage() {
           <input type="text" className="input" placeholder="Search ...." />
           <ul>...</ul>
         </div>
-        <Route path="/Log-In" component={Login} />
+        <Route exact path="/" component={LandingHome} />
       </body>
     </>
   );
