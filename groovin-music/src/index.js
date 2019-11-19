@@ -9,6 +9,7 @@ import { render } from 'react-dom';
 import { useQuery } from '@apollo/react-hooks';
 
 import { ApolloProvider } from '@apollo/react-hooks';
+import Homepage from './Homepage';
 
 
 const client = new ApolloClient({ // client ready to fetch data
@@ -40,7 +41,8 @@ const Hello = () => {
     <ApolloProvider client={client}>
         <div>
             <h2>Connected FE to BE</h2>
-            <Hello></Hello>
+            {/* <Homepage /> */}
+            {/* <Hello></Hello> */}
         </div>
     </ApolloProvider>
 );
