@@ -1,0 +1,16 @@
+.homepage-container {
+      background-color: rgb(15, 20, 26);
+      display: flex;
+      color: white;
+      width: 80%;
+      margin: 0 auto;
+}
+
+.homepage-container .homepage-sidebar {
+    width: 20%;
+    text-align: center;
+}
+
+.homepage-container .homepage-main {
+    width: 80%;
+}

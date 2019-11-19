@@ -3,7 +3,9 @@ import RecentlyPlayed from './components/RecentlyPlayed'
 import MixTapes from './components/MixTapes'
 import FeaturedArtist from './components/FeaturedArtist'
 import Playlists from './components/Playlists'
-import Sidebar from './components/Sidebar'
+import Sidebar from './components/Sidebar';
+import './Homepage.css';
+import AlbumOfWeek from './components/AlbumOfWeek'
 
 export default function Homepage() {
     return (
@@ -16,6 +18,7 @@ export default function Homepage() {
                 </div>
 
                 <div className="homepage-main">
+                    <AlbumOfWeek />
                     <RecentlyPlayed />
                     <MixTapes />
                     <FeaturedArtist />
@@ -23,6 +26,7 @@ export default function Homepage() {
                 </div>
             </div>
 
+            {/* add footer here */}
         </div>
     )
 }

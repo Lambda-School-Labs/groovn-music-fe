@@ -41,7 +41,7 @@ const Hello = () => {
     <ApolloProvider client={client}>
         <div>
             <h2>Connected FE to BE</h2>
-            {/* <Homepage /> */}
+             <Homepage /> 
             {/* <Hello></Hello> */}
         </div>
     </ApolloProvider>
