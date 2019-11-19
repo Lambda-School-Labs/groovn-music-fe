@@ -16,6 +16,20 @@ const Navbar = () => {
       <NavLink
         activeClassName="navbar_link--active"
         className="navbar_link"
+        to="/Features"
+      >
+        Features
+      </NavLink>
+      <NavLink
+        activeClassName="navbar_link--active"
+        className="navbar_link"
+        to="/View-Plans"
+      >
+        View Plans
+      </NavLink>
+      <NavLink
+        activeClassName="navbar_link--active"
+        className="navbar_link"
         to="/Sign-Up"
       >
         Sign-Up
