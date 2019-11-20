@@ -14,3 +14,14 @@
 .homepage-container .homepage-main {
     width: 80%;
 }
+
+@media only screen and (max-width: 600px) {
+    .homepage-container .homepage-sidebar {
+        display: none;
+    }
+
+    .homepage-container .homepage-main {
+        width: 100%;
+    }
+
+}

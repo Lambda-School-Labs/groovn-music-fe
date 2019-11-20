@@ -9,6 +9,17 @@
 }
 
 .album-of-week div {
-    margin: 0 0 50px 80px;
+    margin: 0 0 5% 80px;
     text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .album-of-week {
+        background-size: cover;
+        height: 350px;
+    }
+
+    .album-of-week div {
+        margin: 10px auto;
+    }
 }
