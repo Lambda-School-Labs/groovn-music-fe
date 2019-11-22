@@ -1,6 +1,7 @@
 import React from 'react';
 import {NavLink} from 'react-router-dom'
-import PlaylistPage from './playlist/PLaylistPage.js'
+import PlaylistPage from './pages/playlist-page/PLaylistPage.js'
+import DiscoverPage from './pages/DiscoverPage/DiscoverPage.js'
 import './Sidebar.css';
 
 export default function Sidebar() {

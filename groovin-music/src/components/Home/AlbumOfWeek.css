@@ -1,5 +1,5 @@
 .album-of-week {
-    background: url('../images/audience-band-blur-1587927.jpg');
+    background: url('./images/audience-band-blur-1587927.jpg');
     background-size: 100% 120%;
     box-shadow: inset 10px -300px 250px rgba(3, 4, 5, 0.85);
     height: 500px;

@@ -1,11 +1,14 @@
 import React from 'react'
-import RecentlyPlayed from './components/RecentlyPlayed'
-import MixTapes from './components/MixTapes'
-import FeaturedArtist from './components/FeaturedArtist'
-import Playlists from './components/Playlists'
-import Sidebar from './components/Sidebar';
+
+import RecentlyPlayed from './RecentlyPlayed'
+import MixTapes from './MixTapes';
+import FeaturedArtist from './FeaturedArtist';
+import Playlists from './Playlists'
+import Sidebar from './Sidebar';
+import AlbumOfWeek from './AlbumOfWeek'
+
 import './Homepage.css';
-import AlbumOfWeek from './components/AlbumOfWeek'
+
 
 export default function Homepage() {
     return (
