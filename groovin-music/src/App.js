@@ -7,6 +7,10 @@ import { ApolloProvider } from '@apollo/react-hooks';
 import './App.css';
 import LandingPage from './components/landingPage/landingPage.js';
 import Homepage from './components/Home/Homepage.js';
+import PlaylistPage from './components/pages/PlaylistPage/PlaylistPage';
+import DiscoverPage from './components/pages/DiscoverPage/DiscoverPage';
+import PlayerPage from './components/pages/PlayerPage/PlayerPage';
+import SettingsPage from './components/pages/SettingsPage/SettingsPage';
 
 const client = new ApolloClient({
   // client ready to fetch data
@@ -17,11 +21,17 @@ function App() {
   return (
     <ApolloProvider client={client}>
       <div className="App">
-        <Route path="/" component={Homepage}></Route>
+        <Route exact path="/" component={Homepage}></Route>
+        <Route exact path="/playlist-page" component={PlaylistPage} />
+        <Route exact path="/discover-page" component={DiscoverPage} />
+        <Route exact path="/player-page" component={PlayerPage} />
+        <Route exact path="/settings-page" component={SettingsPage} />
       </div>
     </ApolloProvider>
   );
 }
+
+export default App;
 
 // Below is a way to make the search bar functional
 
@@ -54,5 +64,3 @@ function App() {
 //   onChange={this.handleChange}
 //   placeholder="Search ...."
 // />
-
-export default App;

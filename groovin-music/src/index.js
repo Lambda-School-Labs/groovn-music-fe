@@ -8,7 +8,6 @@ import { useQuery } from '@apollo/react-hooks';
 // import { ApolloProvider } from '@apollo/react-hooks';
 // import Homepage from './Homepage';
 
-
 // const client = new ApolloClient({ // client ready to fetch data
 //   uri: 'http://localhost:4000/graphql',
 // });
@@ -36,14 +35,14 @@ const Hello = () => {
   return <div>{world}</div>;
 };
 
-  // const App = () => (
-  //   <ApolloProvider client={client}>
-  //       <div>
-  //           <h2>Connected FE to BE</h2>
-  //            <Homepage /> 
-  //           {/* <Hello></Hello> */}
-  //       </div>
-  //   </ApolloProvider>
+// const App = () => (
+//   <ApolloProvider client={client}>
+//       <div>
+//           <h2>Connected FE to BE</h2>
+//            <Homepage />
+//           {/* <Hello></Hello> */}
+//       </div>
+//   </ApolloProvider>
 
 ReactDOM.render(
   <Router>

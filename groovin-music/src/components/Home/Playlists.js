@@ -1,11 +1,9 @@
-import React from 'react'
+import React from 'react';
 
 export default function Playlists() {
-    return (
-        <div>
-            <h2>Playlists</h2>
-
-            
-        </div>
-    )
+  return (
+    <div>
+      <h2>Playlists</h2>
+    </div>
+  );
 }
