@@ -1,4 +1,4 @@
-.playerPage-container {
+.settingsPage-container {
   background-color: rgb(15, 20, 26);
   display: flex;
   color: white;
@@ -6,22 +6,22 @@
   margin: 0 auto;
 }
 
-.playerPage-container .sidebar {
+.settingsPage-container .sidebar {
   width: 20%;
   text-align: center;
 }
 
-.playerPage-container .main {
+.settingsPage-container .main {
   width: 80%;
   height: 100%;
 }
 
 @media only screen and (max-width: 600px) {
-  .playerPage-container .sidebar {
+  .settingsPage-container .sidebar {
     display: none;
   }
 
-  .playerPage-container .main {
+  .settingsPage-container .main {
     width: 100%;
   }
 }

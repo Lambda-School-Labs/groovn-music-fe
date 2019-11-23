@@ -1,7 +1,19 @@
-import React from 'react'
+import React from 'react';
+import './DiscoverPage.css';
+import Sidebar from '../../Home/Sidebar';
 
 function DiscoverPage() {
-  return <div>Discover</div>;
+  return (
+    <div className="discoverPage-container">
+      <div className="sidebar">
+        <Sidebar />
+      </div>
+
+      <div className="main">
+        <h1>Discover Page Main Content</h1>
+      </div>
+    </div>
+  );
 }
 
-export default DiscoverPage
+export default DiscoverPage;

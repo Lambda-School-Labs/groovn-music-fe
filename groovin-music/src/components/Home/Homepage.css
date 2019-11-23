@@ -1,27 +1,26 @@
 .homepage-container {
-      background-color: rgb(15, 20, 26);
-      display: flex;
-      color: white;
-      width: 80%;
-      margin: 0 auto;
+  background-color: rgb(15, 20, 26);
+  display: flex;
+  color: white;
+  width: 80%;
+  margin: 0 auto;
 }
 
-.homepage-container .homepage-sidebar {
-    width: 20%;
-    text-align: center;
+.homepage-container .sidebar {
+  width: 20%;
+  text-align: center;
 }
 
-.homepage-container .homepage-main {
-    width: 80%;
+.homepage-container .main {
+  width: 80%;
 }
 
 @media only screen and (max-width: 600px) {
-    .homepage-container .homepage-sidebar {
-        display: none;
-    }
+  .homepage-container .sidebar {
+    display: none;
+  }
 
-    .homepage-container .homepage-main {
-        width: 100%;
-    }
-
+  .homepage-container .main {
+    width: 100%;
+  }
 }

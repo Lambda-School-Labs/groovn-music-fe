@@ -1,9 +1,18 @@
-import React from 'react'
+import React from 'react';
+import Sidebar from '../../Home/Sidebar';
+import './PlaylistPage.css';
+function PlaylistPage() {
+  return (
+    <div className="playlistPage-container">
+      <div className="sidebar">
+        <Sidebar />
+      </div>
 
-function PlaylistPage(){
-    return (
-        <div>Playlist Page</div>
-    )
+      <div className="main">
+        <h1>Playlist Main Content</h1>
+      </div>
+    </div>
+  );
 }
 
 export default PlaylistPage;
