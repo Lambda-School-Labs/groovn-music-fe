@@ -21,7 +21,7 @@ export default function Homepage() {
         </div>
 
         <div>
-          <Route path="/" component={HomeMain} />
+          <Route exact path="/" component={HomeMain} />
           <Route path="/playlist-page" component={PlaylistPage} />
           <Route path="/discover-page" component={DiscoverPage} />
           <Route path="/player-page" component={PlayerPage} />

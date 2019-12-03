@@ -16,7 +16,7 @@ function App() {
   return (
     <ApolloProvider client={client}>
       <div className="App">
-        <Route exact path="/" component={Homepage}></Route>
+        <Route path="/" component={Homepage}></Route>
       </div>
     </ApolloProvider>
   );

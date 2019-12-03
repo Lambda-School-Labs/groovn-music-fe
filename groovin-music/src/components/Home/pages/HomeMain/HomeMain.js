@@ -1,11 +1,9 @@
-import React from 'React';
-import {
-  AlbumOfWeek,
-  RecentlyPlayed,
-  MixTapes,
-  FeaturedArtist,
-  Playlists,
-} from './';
+import React from 'react';
+import AlbumOfWeek from './AlbumOfWeek.js';
+import RecentlyPlayed from './RecentlyPlayed.js';
+import MixTapes from './MixTapes.js';
+import FeaturedArtist from './FeaturedArtist.js';
+import Playlists from './Playlists.js';
 
 function HomeMain() {
   return (
