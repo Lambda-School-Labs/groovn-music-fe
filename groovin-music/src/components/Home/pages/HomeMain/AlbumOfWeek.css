@@ -1,0 +1,24 @@
+.album-of-week {
+  background: url('../../images/audience-band-blur-1587927.jpg');
+  background-size: 100% 120%;
+  box-shadow: inset 10px -300px 250px rgba(3, 4, 5, 0.85);
+  height: 500px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.album-of-week div {
+  margin: 0 0 5% 80px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .album-of-week {
+    background-size: cover;
+    height: 350px;
+  }
+
+  .album-of-week div {
+    margin: 10px auto;
+  }
+}

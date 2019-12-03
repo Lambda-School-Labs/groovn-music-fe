@@ -1,0 +1,27 @@
+.playlistPage-container {
+  background-color: rgb(15, 20, 26);
+  display: flex;
+  color: white;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.playlistPage-container .sidebar {
+  width: 20%;
+  text-align: center;
+}
+
+.playlistPage-container .main {
+  width: 80%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  .playlistPage-container .sidebar {
+    display: none;
+  }
+
+  .playlistPage-container .main {
+    width: 100%;
+  }
+}
