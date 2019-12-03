@@ -3,7 +3,7 @@ import Sidebar from '../../Sidebar/Sidebar.js';
 function PlaylistPage() {
   return (
     <div className="playlistPage-container">
-      <div className="main">
+      <div className="playlistPage-main">
         <h1>Playlist Main Content</h1>
       </div>
     </div>

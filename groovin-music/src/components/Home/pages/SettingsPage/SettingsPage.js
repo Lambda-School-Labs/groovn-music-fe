@@ -5,7 +5,7 @@ import Sidebar from '../../Sidebar/Sidebar.js';
 function SettingsPage() {
   return (
     <div className="playlistPage-container">
-      <div className="main">
+      <div className="settingsPage-main">
         <h1>Settings Main Content</h1>
       </div>
     </div>

@@ -4,7 +4,7 @@ import './DiscoverPage.css';
 function DiscoverPage() {
   return (
     <div className="discoverPage-container">
-      <div className="main">
+      <div className="discover-main">
         <h1>Discover Page Main Content</h1>
       </div>
     </div>

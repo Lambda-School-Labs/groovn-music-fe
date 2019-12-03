@@ -12,21 +12,19 @@ import './Homepage.css';
 
 export default function Homepage() {
   return (
-    <div>
+    <div className="homepage-container">
       {/* add nav bar here */}
 
-      <div className="homepage-container">
-        <div className="sidebar">
-          <Sidebar />
-        </div>
+      <div className="sidebar">
+        <Sidebar />
+      </div>
 
-        <div>
-          <Route exact path="/" component={HomeMain} />
-          <Route path="/playlist-page" component={PlaylistPage} />
-          <Route path="/discover-page" component={DiscoverPage} />
-          <Route path="/player-page" component={PlayerPage} />
-          <Route path="/settings-page" component={SettingsPage} />
-        </div>
+      <div className="main">
+        <Route exact path="/" component={HomeMain} />
+        <Route path="/playlist-page" component={PlaylistPage} />
+        <Route path="/discover-page" component={DiscoverPage} />
+        <Route path="/player-page" component={PlayerPage} />
+        <Route path="/settings-page" component={SettingsPage} />
       </div>
 
       {/* add footer here */}

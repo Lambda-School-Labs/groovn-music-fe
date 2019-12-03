@@ -4,7 +4,7 @@ import './Sidebar.css';
 
 export default function Sidebar() {
   return (
-    <div className="sidebar">
+    <div>
       <input type="text" name="search" placeholder="search" />
       <div className="navLinks">
         <NavLink className="navLink" to="/">

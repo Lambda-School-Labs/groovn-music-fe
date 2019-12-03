@@ -7,7 +7,7 @@ import Playlists from './Playlists.js';
 
 function HomeMain() {
   return (
-    <div className="main">
+    <div className="homeMain-main">
       <AlbumOfWeek />
       <RecentlyPlayed />
       <MixTapes />

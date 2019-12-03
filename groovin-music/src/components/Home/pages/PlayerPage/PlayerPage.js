@@ -5,7 +5,7 @@ import './PlayerPage.css';
 export default function PlayerPage() {
   return (
     <div className="playerPage-container">
-      <div className="main">
+      <div className="playerPage-main">
         <h1>Player Main Content</h1>
       </div>
     </div>
