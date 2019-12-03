@@ -7,13 +7,13 @@ import { ApolloProvider } from '@apollo/react-hooks';
 import './App.css';
 import Homepage from './components/Home/Homepage.js';
 
+import TrackList from './components/MusicPlayer/TrackList';
+import {MusicPlayerProvider} from './components/MusicPlayer/MusicPlayerContext';
+
 const client = new ApolloClient({
   // client ready to fetch data
   uri: 'http://localhost:4000/graphql',
 });
-
-import TrackList from './Tracklist'; 
-import {MusicPlayerProvider} from "./MusicPlayerContext"
 
 const App = () => {
   return (
