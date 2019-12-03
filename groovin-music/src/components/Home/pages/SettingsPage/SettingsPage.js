@@ -1,7 +1,8 @@
 import React from 'react';
-import Sidebar from '../../Home/Sidebar';
-import './PlaylistPage.css';
-function PlaylistPage() {
+import './SettingsPage.css';
+import Sidebar from '../Sidebar/Sidebar.js';
+
+function SettingsPage() {
   return (
     <div className="playlistPage-container">
       <div className="sidebar">
@@ -9,10 +10,10 @@ function PlaylistPage() {
       </div>
 
       <div className="main">
-        <h1>Playlist Main Content</h1>
+        <h1>Settings Main Content</h1>
       </div>
     </div>
   );
 }
 
-export default PlaylistPage;
+export default SettingsPage;

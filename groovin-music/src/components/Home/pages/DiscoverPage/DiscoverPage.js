@@ -1,6 +1,6 @@
 import React from 'react';
 import './DiscoverPage.css';
-import Sidebar from '../../Home/Sidebar';
+import Sidebar from '../Sidebar/Sidebar.js';
 
 function DiscoverPage() {
   return (

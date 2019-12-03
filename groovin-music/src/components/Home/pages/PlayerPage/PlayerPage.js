@@ -1,5 +1,5 @@
 import React from 'react';
-import Sidebar from '../../Home/Sidebar';
+import Sidebar from '../Sidebar/Sidebar';
 import './PlayerPage.css';
 
 export default function PlayerPage() {

@@ -1,11 +1,12 @@
 import React from 'react';
+import { Route } from 'react-router-dom';
 
-import RecentlyPlayed from './RecentlyPlayed';
-import MixTapes from './MixTapes';
-import FeaturedArtist from './FeaturedArtist';
-import Playlists from './Playlists';
-import Sidebar from './Sidebar';
-import AlbumOfWeek from './AlbumOfWeek';
+import HomeMain from './pages/HomeMain/HomeMain.js';
+import PlaylistPage from './pages/PlaylistPage/PlaylistPage.js';
+import DiscoverPage from './pages/DiscoverPage/DiscoverPage.js';
+import PlayerPage from './pages/PlayerPage/PlayerPage.js';
+import SettingsPage from './pages/SettingsPage/SettingsPage.js';
+import Sidebar from './Sidebar/Sidebar.js';
 
 import './Homepage.css';
 
@@ -19,12 +20,12 @@ export default function Homepage() {
           <Sidebar />
         </div>
 
-        <div className="main">
-          <AlbumOfWeek />
-          <RecentlyPlayed />
-          <MixTapes />
-          <FeaturedArtist />
-          <Playlists />
+        <div>
+          <Route path="/" component={HomeMain} />
+          <Route path="/playlist-page" component={PlaylistPage} />
+          <Route path="/discover-page" component={DiscoverPage} />
+          <Route path="/player-page" component={PlayerPage} />
+          <Route path="/settings-page" component={SettingsPage} />
         </div>
       </div>
 
