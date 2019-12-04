@@ -20,11 +20,11 @@ export default function Homepage() {
       </div>
 
       <div className="main">
-        <Route exact path="/" component={HomeMain} />
-        <Route path="/playlist-page" component={PlaylistPage} />
-        <Route path="/discover-page" component={DiscoverPage} />
-        <Route path="/player-page" component={PlayerPage} />
-        <Route path="/settings-page" component={SettingsPage} />
+        <Route exact path="/auth/spotify/callback" component={HomeMain} />
+        <Route path="/auth/spotify/callback/playlist-page" component={PlaylistPage} />
+        <Route path="/auth/spotify/callback/discover-page" component={DiscoverPage} />
+        <Route path="/auth/spotify/callback/player-page" component={PlayerPage} />
+        <Route path="/auth/spotify/callback/settings-page" component={SettingsPage} />
       </div>
 
       {/* add footer here */}
