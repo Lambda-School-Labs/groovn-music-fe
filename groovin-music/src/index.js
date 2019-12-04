@@ -9,12 +9,10 @@ import { render } from 'react-dom';
 import { useQuery } from '@apollo/react-hooks';
 import Signup from './components/Signup.js';
 
-
-
 import { ApolloProvider } from '@apollo/react-hooks';
 
-
-const client = new ApolloClient({ // client ready to fetch data
+const client = new ApolloClient({
+  // client ready to fetch data
   uri: 'http://localhost:4000/graphql',
 });
 
@@ -33,20 +31,20 @@ const HELLO_QUERY = gql`
 
 //   if (loading) return <div>Loading...</div>;
 
-//   const { world } = data.hello;  
+//   const { world } = data.hello;
 //     return (
 //   <div>{`${ world }`}</div>
 //   );
 // };
 
-  const App = () => (
-    <ApolloProvider client={client}>
-        <div>
-            <h2>Connected FE to BE</h2>
-            <Signup />
-             {/* <Hello></Hello>  */}
-        </div>
-    </ApolloProvider>
+const App = () => (
+  <ApolloProvider client={client}>
+    <div>
+      <h2>Connected FE to BE</h2>
+      <Signup />
+      {/* <Hello></Hello>  */}
+    </div>
+  </ApolloProvider>
 );
 
 render(<App />, document.getElementById('root'));
