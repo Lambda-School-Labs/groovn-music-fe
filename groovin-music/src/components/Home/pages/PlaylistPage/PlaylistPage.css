@@ -16,6 +16,10 @@
   height: 100%;
 }
 
+.playlist-image-container {
+  width: 80%;
+}
+
 @media only screen and (max-width: 600px) {
   .playlistPage-container .sidebar {
     display: none;
