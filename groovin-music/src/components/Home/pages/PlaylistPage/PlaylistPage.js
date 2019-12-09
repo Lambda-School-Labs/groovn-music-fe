@@ -49,6 +49,15 @@ function Playlist(props) {
   );
 }
 
+//XML for the play butotn - still needs to be set up
+/*
+<img
+  className="play-button"
+  src={require('../../images/play-button.png')}
+  alt=""
+/>
+*/
+
 //dummy data
 const PlaylistImg = '../../images/genaric_playlist_img.jpg';
 const playlistName = 'Test Playlist';
@@ -77,5 +86,30 @@ const testTracks = [
     name: 'test-name 5',
     artist: 'test-artist 5',
     album: 'test-album 5',
+  },
+  {
+    name: 'test-name 6',
+    artist: 'test-artist 6',
+    album: 'test-album 6',
+  },
+  {
+    name: 'test-name 7',
+    artist: 'test-artist 7',
+    album: 'test-album 7',
+  },
+  {
+    name: 'test-name 8',
+    artist: 'test-artist 8',
+    album: 'test-album 8',
+  },
+  {
+    name: 'test-name 9',
+    artist: 'test-artist 9',
+    album: 'test-album 9',
+  },
+  {
+    name: 'test-name 10',
+    artist: 'test-artist 10',
+    album: 'test-album 10',
   },
 ];

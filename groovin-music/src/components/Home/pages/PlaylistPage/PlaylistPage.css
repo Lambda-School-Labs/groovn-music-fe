@@ -38,6 +38,10 @@ hr {
   size: 1px;
 }
 
+.play-button {
+  width: 10%;
+}
+
 .track-list::-webkit-scrollbar {
   width: 20px;
 }
