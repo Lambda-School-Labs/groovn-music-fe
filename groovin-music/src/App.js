@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <Route exact path="/" component={LandingPage}></Route>
-      <Route path="/auth/spotify/callback" component={Homepage}></Route>
+      <Route path="/" component={Homepage}></Route>
     </div>
   );
 }

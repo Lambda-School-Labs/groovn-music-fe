@@ -9,43 +9,38 @@ import './index.css';
 const client = new ApolloClient({
   // client ready to fetch data
   uri: 'http://localhost:4000/graphql',
+  credentials: 'include',
 });
 
 const USER_QUERY = gql`
   query currentUser {
-    currentuser {
-      user
+    currentUser {
+      displayName
     }
   }
 `;
 
-client
-  .query({
-    query: gql`
-      query currentuser {
-        user {
-          id
-        }
-      }
-    `,
-  })
-  .then(result => console.log(`${result} == RESULT`));
-
 const User = () => {
   console.log('here');
-  const { loading, data } = useQuery(USER_QUERY, {
+  const { loading, error, data } = useQuery(USER_QUERY, {
     notifyOnNetworkStatusChange: true,
   });
 
-  if (loading) return <div>Loading...</div>;
+  if (loading) {
+    return <div>Loading...</div>;
+  } else if (error) {
+    return <div>{error.message}</div>;
+  }
+  console.log(data);
+  //const { displayName } = data.currentUser;
 
-  const { world } = data.user;
-  return <div>{world}</div>;
+  return <div></div>;
 };
 
 ReactDOM.render(
   <ApolloProvider client={client}>
     <Router>
+      <User />
       <App />
     </Router>
   </ApolloProvider>,
