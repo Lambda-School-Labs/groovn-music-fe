@@ -10,6 +10,7 @@ import LandingPage from './components/landingPage/landingPage';
 
 import TrackList from './components/MusicPlayer/TrackList';
 import {MusicPlayerProvider} from './components/MusicPlayer/MusicPlayerContext';
+import PlayerControls from './components/MusicPlayer/PlayerControls';
 
 const client = new ApolloClient({
   // client ready to fetch data
@@ -27,6 +28,7 @@ const App = () => {
       <MusicPlayerProvider>
     <div className= "container">
       <TrackList/>
+      <PlayerControls/>
     </div>
    </MusicPlayerProvider>
 
