@@ -6,6 +6,7 @@ import { ApolloProvider } from '@apollo/react-hooks';
 
 import './App.css';
 import Homepage from './components/Home/Homepage.js';
+import LandingPage from './components/landingPage/landingPage';
 
 import TrackList from './components/MusicPlayer/TrackList';
 import {MusicPlayerProvider} from './components/MusicPlayer/MusicPlayerContext';
@@ -20,7 +21,8 @@ const App = () => {
 
     <ApolloProvider client={client}>
       <div className="App">
-        <Route path="/" component={Homepage}></Route>
+        <Route exact path="/" component={LandingPage}></Route>
+        <Route path="/auth/spotify/callback" component={Homepage}></Route>
       </div>
       <MusicPlayerProvider>
     <div className= "container">
