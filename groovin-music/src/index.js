@@ -12,35 +12,9 @@ const client = new ApolloClient({
   credentials: 'include',
 });
 
-const USER_QUERY = gql`
-  query currentUser {
-    currentUser {
-      displayName
-    }
-  }
-`;
-
-const User = () => {
-  console.log('here');
-  const { loading, error, data } = useQuery(USER_QUERY, {
-    notifyOnNetworkStatusChange: true,
-  });
-
-  if (loading) {
-    return <div>Loading...</div>;
-  } else if (error) {
-    return <div>{error.message}</div>;
-  }
-  console.log(data);
-  //const { displayName } = data.currentUser;
-
-  return <div></div>;
-};
-
 ReactDOM.render(
   <ApolloProvider client={client}>
     <Router>
-      <User />
       <App />
     </Router>
   </ApolloProvider>,
