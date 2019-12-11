@@ -15,7 +15,7 @@ const useMusicPlayer = () => {
     }
   }
 
-  function togglePlay() {
+  function togglePlay() {   // Pause track logic 
     if (state.isPlaying) {
       state.audioPlayer.pause();
     } else {
@@ -24,12 +24,12 @@ const useMusicPlayer = () => {
     setState(state => ({ ...state, isPlaying: !state.isPlaying }));
   }
 
-  function playPreviousTrack() {
+  function playPreviousTrack() { // Play previos track logic 
     const newIndex = ((state.currentTrackIndex + -1) % state.tracks.length + state.tracks.length) % state.tracks.length;
     playTrack(newIndex);
   }
 
-  function playNextTrack() {
+  function playNextTrack() {  // Play next track logic 
     const newIndex = (state.currentTrackIndex + 1) % state.tracks.length;
     playTrack(newIndex);
   }
