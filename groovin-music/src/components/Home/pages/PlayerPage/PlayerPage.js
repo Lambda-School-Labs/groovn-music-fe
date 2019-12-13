@@ -1,5 +1,4 @@
 import React from 'react';
-import Sidebar from '../../Sidebar/Sidebar';
 import './PlayerPage.css';
 
 export default function PlayerPage() {
@@ -19,6 +18,7 @@ function CurrentSong(props) {
         <h2>{props.track.albumName}</h2>
       </div>
       <img className="current-song-img" src={props.track.songImg} alt="" />
+      <Player />
     </div>
   );
 }

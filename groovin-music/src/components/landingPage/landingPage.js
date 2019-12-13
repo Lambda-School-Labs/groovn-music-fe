@@ -1,8 +1,6 @@
-import React, { useReducer } from 'react';
-import { Route } from 'react-router-dom';
+import React from 'react';
 import LandingHome from './LandingHome';
 import './landingPage.css';
-import NavBar from '../NavBar/navbar.js';
 
 function LandingPage() {
   return (

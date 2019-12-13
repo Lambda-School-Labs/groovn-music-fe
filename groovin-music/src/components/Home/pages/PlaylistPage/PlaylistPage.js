@@ -1,5 +1,4 @@
 import React from 'react';
-import playlistCover from '../../images/genaric_playlist_img.jpg';
 import './PlaylistPage.css';
 
 function PlaylistPage() {
@@ -22,9 +21,9 @@ function Playlist(props) {
       <div className="playlist-header">
         <h1>{props.playlistName}</h1>
         <img
+          alt=""
           className="playlist-image-container"
           src={require('../../images/genaric_playlist_img.jpg')}
-          atl=""
         />
       </div>
       <div className="track-list">
