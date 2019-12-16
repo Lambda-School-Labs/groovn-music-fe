@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
 import ApolloClient from 'apollo-boost';
-
+import 'dotenv/config';
 import { ApolloProvider } from '@apollo/react-hooks';
 
 import './App.css';
