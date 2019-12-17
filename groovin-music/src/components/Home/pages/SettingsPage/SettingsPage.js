@@ -1,6 +1,5 @@
 import React from 'react';
 import './SettingsPage.css';
-import Sidebar from '../../Sidebar/Sidebar.js';
 
 function SettingsPage() {
   return (
