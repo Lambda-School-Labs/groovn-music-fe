@@ -8,7 +8,12 @@ const RANDOM_TRACK_QUERY = gql`
     query tracks {
         getLikedTracks {
             id
+            name
+            albumName
             albumCover
+            artists {
+                name
+            }
         }
     }
 `;
@@ -24,27 +29,30 @@ const RandomTrack = () => {
         return <div>{error.message}</div>;
     }
 
+    let num;
     function randomize() {
-        let num = Math.floor(data.getLikedTracks.length * Math.random());
+        num = Math.floor(data.getLikedTracks.length * Math.random());
 
         if(num < data.getLikedTracks.length) {
             return num;
         } else {
+            num = 0;
             return 0;
         }
     }
 
-    const divStyle = {
-        background: `url(${data.getLikedTracks[randomize()].albumCover})`,
-        backgroundSize: 'contain',
-        backgroundRepeat: 'no-repeat'
+    const imageStyle = {
+        backgroundImage: `url(${data.getLikedTracks[randomize()].albumCover})`,
     }
 
     return (
-    <div className="album-background" style={divStyle}>
-        <h2>Song Name</h2>
-        <h3>Album Name</h3>
-        <h3>Artist Name</h3>
+    <div className="album-container">
+            <div className="album-image" style={imageStyle}></div>
+        <div className="album-text">
+            <h2>{data.getLikedTracks[num].name}</h2>
+            <h3>{data.getLikedTracks[num].albumName}</h3>
+                <h3>{data.getLikedTracks[num].artists[0].name}</h3>
+        </div>
     </div>
     )
 }
@@ -52,13 +60,7 @@ const RandomTrack = () => {
 function AlbumOfWeek() {
     return (
         <div className="album-of-week">
-            <RandomTrack>
-                <div>
-                    <h2>Song Name</h2>
-                    <h3>Album Name</h3>
-                    <h3>Artist Name</h3>
-                </div>
-            </RandomTrack>
+            <RandomTrack />
         </div>
     )
 }

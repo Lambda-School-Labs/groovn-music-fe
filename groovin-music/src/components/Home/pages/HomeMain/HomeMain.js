@@ -10,8 +10,8 @@ function HomeMain() {
     <div className="homeMain-main">
       <AlbumOfWeek />
       <RecentlyPlayed />
-      <MixTapes />
-      <FeaturedArtist />
+      {/* <MixTapes /> */}
+      {/* <FeaturedArtist /> */}
       <Playlists />
     </div>
   );
