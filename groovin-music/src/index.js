@@ -47,7 +47,7 @@ query
 
 export function Track() {
   console.log('playing')
-  console.log(data)
+  
   const { loading, data } = useQuery(TRACK_QUERY);
   return (
     <div>
