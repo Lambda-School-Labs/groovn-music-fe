@@ -7,19 +7,19 @@ export default function Sidebar() {
     <div>
       <input type="text" name="search" placeholder="search" />
       <div className="navLinks">
-        <NavLink className="navLink" to="/auth/spotify/callback/">
+        <NavLink className="navLink" to="/">
           Home
         </NavLink>
-        <NavLink className="navLink" to="/auth/spotify/callback/playlist-page">
+        <NavLink className="navLink" to="/playlist-page">
           Playlist
         </NavLink>
-        <NavLink className="navLink" to="/auth/spotify/callback/discover-page">
+        <NavLink className="navLink" to="/discover-page">
           Discover
         </NavLink>
-        <NavLink className="navLink" to="/auth/spotify/callback/player-page">
+        <NavLink className="navLink" to="/player-page">
           Player
         </NavLink>
-        <NavLink className="navLink" to="/auth/spotify/callback/settings-page">
+        <NavLink className="navLink" to="/settings-page">
           Settings
         </NavLink>
       </div>
