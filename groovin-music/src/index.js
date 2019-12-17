@@ -31,34 +31,48 @@ const client = new ApolloClient({ // client ready to fetch data
 
 
 const TRACK_QUERY = gql`
-query 
-  tracks{
+query GetTracksInfo($tracks: [String!]){
+  
+  getTracksInfo(tracks: $tracks){
     id
     name
     albumName
     albumCover
-    artists{name
-            id
-    }  
   }
-
+}
+  
   
 `;
 
 export function Track() {
   console.log('playing')
   
-  const { loading, data } = useQuery(TRACK_QUERY);
+  const { loading, error,  data } = useQuery(TRACK_QUERY, {variables: {tracks:[ '4MUF5hjHDYbJF2YtKFp0MI',
+  '6e8Voz3K2vcOsydNtxbwaQ',
+  '4ZD1VFoJ9LyV65KhPO9TZ5',
+  '35cOyocq8Gb6UcT0NWeTwn',
+  '0uuH3Htpahzscc1YSG833Z',
+  '5DjNBCWKdD2y8zyIxmKbbl'] }});
+  
+
+  if (loading) {
+    return <div>Loading...</div>;
+} else if (error) {
+    return <div>{error.message}</div>;
+}
+  console.log(data)
+
   return (
+    
     <div>
     <h1> Track </h1>
-    {loading ? <p>Loading...</p> : <p>Name:</p>}
-
+     <p>Name: {data}</p>
+  
     </div>
 
   );
-};
 
+  }
 // const Track = () => {
   
 //   console.log('playing')
