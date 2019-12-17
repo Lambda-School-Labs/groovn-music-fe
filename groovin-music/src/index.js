@@ -31,33 +31,48 @@ const client = new ApolloClient({ // client ready to fetch data
 
 
 const TRACK_QUERY = gql`
-  query {
-    getTracksInfo(track: "11dFghVXANMlKmJXsNCbNl"){
-      id
-      name
-      albumName
-      albumCover
-      artists{
-        name 
-        id
-      }
-    }
+query 
+  tracks{
+    id
+    name
+    albumName
+    albumCover
+    artists{name
+            id
+    }  
   }
+
+  
 `;
 
-const Track = () => {
+export function Track() {
   console.log('playing')
-  const { loading, data } = useQuery(TRACK_QUERY, {
-    notifyOnNetworkStatusChange: true,
-  });
+  console.log(data)
+  const { loading, data } = useQuery(TRACK_QUERY);
+  return (
+    <div>
+    <h1> Track </h1>
+    {loading ? <p>Loading...</p> : <p>Name:</p>}
 
-  if (loading) return <div>Loading...</div>;
+    </div>
 
-  const {name} = data.getTracksInfo;  
-    return (
-  <div>{name}</div>
   );
 };
+
+// const Track = () => {
+  
+//   console.log('playing')
+//   const { loading, data } = useQuery(TRACK_QUERY, {
+//     notifyOnNetworkStatusChange: true,
+//   });
+
+//   if (loading) return <div>Loading...</div>;
+
+//   const {name} = data.tracks.name;  
+//     return (
+//   <div>{name}</div>
+//   );
+// };
 
   const App = () => (
     <ApolloProvider client={client}>
