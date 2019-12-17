@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
-// import Homepage from './components/Home/Homepage.js';
+import Homepage from './components/Home/Homepage.js';
 import LandingPage from './components/landingPage/landingPage';
 import './App.css';
 import { gql } from 'apollo-boost';
@@ -36,15 +36,10 @@ const User = () => {
 
 const App = () => {
   return (
-
-   <div className="App">
+    <div className="App">
       <Route to exact path="/landing-page" component={LandingPage} />
       <Route exact to="/protected" component={PrivateRoute} />
     </div>
-      
-
-    
-   
   );
 }
 
