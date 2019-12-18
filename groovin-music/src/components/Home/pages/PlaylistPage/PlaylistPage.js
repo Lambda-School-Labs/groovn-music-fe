@@ -1,5 +1,13 @@
 import React from 'react';
 import './PlaylistPage.css';
+import { gql } from 'apollo-boost';
+import { useQuery } from '@apollo/react-hooks';
+
+// const RECOMENDED_PLAYLIST_QUERY = gql`
+//   query getRecomendedTracks {
+//     getRecomendedTracks()
+//   }
+// `;
 
 function PlaylistPage() {
   return (
