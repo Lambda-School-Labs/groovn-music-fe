@@ -1,14 +1,68 @@
 import React from 'react';
-import './AlbumOfWeek.css';
+import { gql } from 'apollo-boost';
+import { useQuery } from '@apollo/react-hooks';
 
-export default function AlbumOfWeek() {
+import './HomeMain.css';
+
+const RANDOM_TRACK_QUERY = gql`
+    query tracks {
+        getLikedTracks {
+            id
+            name
+            albumName
+            albumCover
+            artists {
+                name
+            }
+        }
+    }
+`;
+
+const RandomTrack = () => {
+    const { loading, error, data } = useQuery(RANDOM_TRACK_QUERY, {
+        notifyOnNetworkStatusChange: true,
+    });
+
+    if (loading) {
+        return <div>Loading...</div>;
+    } else if (error) {
+        return <div>{error.message}</div>;
+    }
+
+    let num;
+    function randomize() {
+        num = Math.floor(data.getLikedTracks.length * Math.random());
+
+        if(num < data.getLikedTracks.length) {
+            return num;
+        } else {
+            num = 0;
+            return 0;
+        }
+    }
+
+    const imageStyle = {
+        backgroundImage: `url(${data.getLikedTracks[randomize()].albumCover})`,
+    }
+
+    return (
+    <div className="album-container">
+            <div className="album-image" style={imageStyle}></div>
+        <div className="album-text">
+            <h2>{data.getLikedTracks[num].name}</h2>
+            <h3>{data.getLikedTracks[num].albumName}</h3>
+                <h3>{data.getLikedTracks[num].artists[0].name}</h3>
+        </div>
+    </div>
+    )
+}
+
+function AlbumOfWeek() {
     return (
         <div className="album-of-week">
-            <div>
-                <h3>Album of the Week</h3>
-                <h4>Album Name</h4>
-                <h4>Artist Name</h4>
-            </div>
+            <RandomTrack />
         </div>
     )
 }
+
+export default AlbumOfWeek;

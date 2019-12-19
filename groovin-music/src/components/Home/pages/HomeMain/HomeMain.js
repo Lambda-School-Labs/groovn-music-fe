@@ -39,8 +39,8 @@ function HomeMain() {
       <User />
       <AlbumOfWeek />
       <RecentlyPlayed />
-      <MixTapes />
-      <FeaturedArtist />
+      {/* <MixTapes /> */}
+      {/* <FeaturedArtist /> */}
       <Playlists />
     </div>
   );
