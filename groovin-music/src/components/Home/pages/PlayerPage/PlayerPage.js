@@ -1,5 +1,14 @@
 import React from 'react';
 import './PlayerPage.css';
+import PlayerControls from '../../../MusicPlayer/PlayerControls.js';
+import SpotifyPlayer from 'react-spotify-player';
+
+const size = {
+  width: '100%',
+  height: 300,
+};
+const view = 'list'; // or 'coverart'
+const theme = 'black'; // or 'white'
 
 export default function PlayerPage() {
   return (
@@ -12,19 +21,20 @@ export default function PlayerPage() {
 function CurrentSong(props) {
   return (
     <div className="current-song">
-      <div>
-        <h1>{props.track.songTitle}</h1>
-        <h2>{props.track.artistName}</h2>
-        <h2>{props.track.albumName}</h2>
-      </div>
-      <img className="current-song-img" src={props.track.songImg} alt="" />
       <Player />
     </div>
   );
 }
 
 function Player() {
-  return <div className="test-player"></div>;
+  return (
+    <SpotifyPlayer
+      uri="spotify:track:2IcjuFPUZISzX2LLhKZJN0"
+      size={size}
+      view={view}
+      theme={theme}
+    />
+  );
 }
 
 const currentSong = {

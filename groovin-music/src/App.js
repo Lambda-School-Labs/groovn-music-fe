@@ -5,7 +5,7 @@ import LandingPage from './components/landingPage/landingPage';
 import './App.css';
 import { gql } from 'apollo-boost';
 import { useQuery } from '@apollo/react-hooks';
-
+import { MusicPlayerProvider } from './components/MusicPlayer/MusicPlayerContext';
 
 import PrivateRoute from './components/PrivateRoute/PrivateRoute.js';
 
@@ -36,13 +36,14 @@ const User = () => {
 
 const App = () => {
   return (
-    <div className="App">
-      <Route to exact path="/landing-page" component={LandingPage} />
-      <Route exact to="/protected" component={PrivateRoute} />
-    </div>
+    <MusicPlayerProvider>
+      <div className="App">
+        <Route to exact path="/landing-page" component={LandingPage} />
+        <Route exact to="/protected" component={PrivateRoute} />
+      </div>
+    </MusicPlayerProvider>
   );
-}
-
+};
 
 export default App;
 
