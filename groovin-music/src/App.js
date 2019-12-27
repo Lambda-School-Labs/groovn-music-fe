@@ -7,6 +7,8 @@ import { gql } from 'apollo-boost';
 import { useQuery } from '@apollo/react-hooks';
 import { MusicPlayerProvider } from './components/MusicPlayer/MusicPlayerContext';
 
+import { MainContextProvider } from './components/Context/MainContext';
+
 import PrivateRoute from './components/PrivateRoute/PrivateRoute.js';
 
 const USER_QUERY = gql`
@@ -36,12 +38,12 @@ const User = () => {
 
 const App = () => {
   return (
-    <MusicPlayerProvider>
+    <MainContextProvider>
       <div className="App">
         <Route to exact path="/landing-page" component={LandingPage} />
         <Route exact to="/protected" component={PrivateRoute} />
       </div>
-    </MusicPlayerProvider>
+    </MainContextProvider>
   );
 };
 

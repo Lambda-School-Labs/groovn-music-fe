@@ -4,6 +4,7 @@ import './PlayerPage.css';
 import SpotifyPlayer from 'react-spotify-player';
 import { gql } from 'apollo-boost';
 import { useQuery, useMutation } from '@apollo/react-hooks';
+import { MainContext } from '../../../Context/MainContext';
 
 const CREATE_RECOMMENDED_PLAYLIST = gql`
   mutation CreateRecommendedPlaylist($name: String!, $description: String) {
@@ -14,9 +15,11 @@ const CREATE_RECOMMENDED_PLAYLIST = gql`
 `;
 
 export default function PlayerPage() {
+  const [state, setState] = React.useContext(MainContext);
+
   return (
     <div className="playerPage-container">
-      <RecommendedPlayist />
+      <RecommendedPlayist tracks={state.currentPlaylist} />
     </div>
   );
 }
@@ -39,7 +42,7 @@ function Player(props) {
   );
 }
 
-const RecommendedPlayist = () => {
+const RecommendedPlayist = props => {
   console.log('here in the reced playlist function');
   const [input, setInput] = useState({
     name: '',
@@ -76,7 +79,7 @@ const RecommendedPlayist = () => {
   };
 
   const nextTrack = () => {
-    if (currentTrack < tracks.length - 1) {
+    if (currentTrack < props.tracks.length - 1) {
       setCurrentTrack(currentTrack + 1);
     } else {
       setCurrentTrack(0);
@@ -87,10 +90,11 @@ const RecommendedPlayist = () => {
     if (currentTrack > 0) {
       setCurrentTrack(currentTrack - 1);
     } else {
-      setCurrentTrack(tracks.length - 1);
+      setCurrentTrack(props.tracks.length - 1);
     }
   };
-
+  console.log(props.tracks);
+  console.log(currentTrack);
   if (loading) {
     return <div>{loading}</div>;
   } else {
@@ -113,17 +117,10 @@ const RecommendedPlayist = () => {
           />
           <button type="submit"> Create Playlist </button>
         </form>
-        <Player currentTrack={tracks[currentTrack]} />
+        <Player currentTrack={props.tracks[currentTrack]} />
         <button onClick={previousTrack}>Previous Track</button>
         <button onClick={nextTrack}>Next Track</button>
       </div>
     );
   }
-};
-
-const currentSong = {
-  songTitle: 'Test-SongTitle',
-  artistName: 'Test-ArtistName',
-  albumName: 'Test-AblumName',
-  songImg: 'https://i.redd.it/btchnm8ctq911.jpg',
 };
