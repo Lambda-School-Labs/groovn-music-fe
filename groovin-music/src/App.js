@@ -5,6 +5,9 @@ import LandingPage from './components/landingPage/landingPage';
 import './App.css';
 import { gql } from 'apollo-boost';
 import { useQuery } from '@apollo/react-hooks';
+import { MusicPlayerProvider } from './components/MusicPlayer/MusicPlayerContext';
+
+import { MainContextProvider } from './components/Context/MainContext';
 
 import PrivateRoute from './components/PrivateRoute/PrivateRoute.js';
 
@@ -33,14 +36,16 @@ const User = () => {
   return <div>{displayName}</div>;
 };
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <Route to exact path="/landing-page" component={LandingPage} />
-      <Route exact to="/protected" component={PrivateRoute} />
-    </div>
+    <MainContextProvider>
+      <div className="App">
+        <Route to exact path="/landing-page" component={LandingPage} />
+        <Route exact to="/protected" component={PrivateRoute} />
+      </div>
+    </MainContextProvider>
   );
-}
+};
 
 export default App;
 

@@ -2,11 +2,9 @@ import React from 'react';
 import { Route } from 'react-router-dom';
 
 import HomeMain from './pages/HomeMain/HomeMain.js';
-import PlaylistPage from './pages/PlaylistPage/PlaylistPage.js';
-import DiscoverPage from './pages/DiscoverPage/DiscoverPage.js';
 import PlayerPage from './pages/PlayerPage/PlayerPage.js';
-import SettingsPage from './pages/SettingsPage/SettingsPage.js';
 import Sidebar from './Sidebar/Sidebar.js';
+import ReccommendedPlaylist from './pages/RecommendedPlaylistPage/RecommendedPlaylist';
 
 import './Homepage.css';
 
@@ -21,10 +19,8 @@ export default function Homepage() {
 
       <div className="main">
         <Route exact path="/" component={HomeMain} />
-        <Route path="/playlist-page" component={PlaylistPage} />
-        <Route path="/discover-page" component={DiscoverPage} />
         <Route path="/player-page" component={PlayerPage} />
-        <Route path="/settings-page" component={SettingsPage} />
+        <Route path="/recommended-playlist" component={ReccommendedPlaylist} />
       </div>
 
       {/* add footer here */}

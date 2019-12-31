@@ -2,7 +2,7 @@ import React from 'react';
 import { gql } from 'apollo-boost';
 import { useQuery } from '@apollo/react-hooks';
 import { NavLink } from 'react-router-dom';
-
+import { MainContext } from '../../../Context/MainContext';
 import './HomeMain.css';
 
 const PLAYLIST_QUERY = gql`
@@ -15,9 +15,14 @@ const PLAYLIST_QUERY = gql`
 `;
 
 const PlaylistList = () => {
+  const [state, setState] = React.useContext(MainContext);
   const { loading, error, data } = useQuery(PLAYLIST_QUERY, {
     notifyOnNetworkStatusChange: true,
   });
+
+  const setPlaylist = e => {
+    setState({ ...state, currentPlaylist: e.target.playlist.id });
+  };
 
   if (loading) {
     return <div>Loading...</div>;
@@ -26,17 +31,21 @@ const PlaylistList = () => {
   }
 
   let playlists = data.getPlaylists.map((playlist, index) => {
-    if(index < 4) {
+    if (index < 4) {
       return (
-        <div className="homepage-item box" key={playlist.id}>
+        <div
+          className="homepage-item box"
+          key={playlist.id}
+          onClick={setPlaylist}
+        >
           <h3>{playlist.name}</h3>
         </div>
-      )
+      );
     }
-  })
+  });
 
   return playlists;
-}
+};
 
 export default function Playlists() {
   return (

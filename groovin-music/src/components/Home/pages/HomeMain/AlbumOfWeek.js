@@ -5,64 +5,64 @@ import { useQuery } from '@apollo/react-hooks';
 import './HomeMain.css';
 
 const RANDOM_TRACK_QUERY = gql`
-    query tracks {
-        getLikedTracks {
-            id
-            name
-            albumName
-            albumCover
-            artists {
-                name
-            }
-        }
+  query tracks {
+    getLikedTracks {
+      id
+      name
+      albumName
+      albumCover
+      artists {
+        name
+      }
     }
+  }
 `;
 
 const RandomTrack = () => {
-    const { loading, error, data } = useQuery(RANDOM_TRACK_QUERY, {
-        notifyOnNetworkStatusChange: true,
-    });
+  const { loading, error, data } = useQuery(RANDOM_TRACK_QUERY, {
+    notifyOnNetworkStatusChange: true,
+  });
 
-    if (loading) {
-        return <div>Loading...</div>;
-    } else if (error) {
-        return <div>{error.message}</div>;
+  if (loading) {
+    return <div>Loading...</div>;
+  } else if (error) {
+    return <div>{error.message}</div>;
+  }
+
+  let num;
+  function randomize() {
+    num = Math.floor(data.getLikedTracks.length * Math.random());
+
+    if (num < data.getLikedTracks.length) {
+      return num;
+    } else {
+      num = 0;
+      return 0;
     }
+  }
 
-    let num;
-    function randomize() {
-        num = Math.floor(data.getLikedTracks.length * Math.random());
+  const imageStyle = {
+    backgroundImage: `url(${data.getLikedTracks[randomize()].albumCover})`,
+  };
 
-        if(num < data.getLikedTracks.length) {
-            return num;
-        } else {
-            num = 0;
-            return 0;
-        }
-    }
-
-    const imageStyle = {
-        backgroundImage: `url(${data.getLikedTracks[randomize()].albumCover})`,
-    }
-
-    return (
+  return (
     <div className="album-container">
-            <div className="album-image" style={imageStyle}></div>
-        <div className="album-text">
-            <h2>{data.getLikedTracks[num].name}</h2>
-            <h3>{data.getLikedTracks[num].albumName}</h3>
-                <h3>{data.getLikedTracks[num].artists[0].name}</h3>
-        </div>
+      <div className="album-image" style={imageStyle}></div>
+      <div className="album-text">
+        <h2>{data.getLikedTracks[num].name}</h2>
+        <h3>{data.getLikedTracks[num].albumName}</h3>
+        <h3>{data.getLikedTracks[num].artists[0].name}</h3>
+      </div>
     </div>
-    )
-}
+  );
+};
 
 function AlbumOfWeek() {
-    return (
-        <div className="album-of-week">
-            <RandomTrack />
-        </div>
-    )
+  return (
+    <div className="album-of-week">
+      <RandomTrack />
+    </div>
+  );
 }
 
 export default AlbumOfWeek;
