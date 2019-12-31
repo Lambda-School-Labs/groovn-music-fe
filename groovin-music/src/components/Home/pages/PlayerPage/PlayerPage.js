@@ -1,13 +1,18 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './PlayerPage.css';
-
 import SpotifyPlayer from 'react-spotify-player';
+import { MainContext } from '../../../Context/MainContext.js';
 
-import { MainContext } from '../../../Context/MainContext';
+/**
+ * This page displays the player component. There are two buttons
+ * used to skip tracks back and forth.
+ */
 
 export default function PlayerPage() {
+  //Hook for getting the Main context
   const [state, setState] = React.useContext(MainContext);
 
+  //Skips forward a track by incrementing the currentTrackIndex value on the main context.  onClick method
   const nextTrack = () => {
     if (state.currentTrackIndex < state.currentPlaylist.length - 1) {
       setState({ ...state, currentTrackIndex: state.currentTrackIndex + 1 });
@@ -16,6 +21,7 @@ export default function PlayerPage() {
     }
   };
 
+  //Skips backward a track by decrementing the currentTrackIndex value on the main context. onClick method
   const previousTrack = () => {
     if (state.currentTrackIndex > 0) {
       setState({ ...state, currentTrackIndex: state.currentTrackIndex - 1 });
@@ -27,6 +33,7 @@ export default function PlayerPage() {
     }
   };
 
+  // Renders the player componet and the buttons to skip tracks
   return (
     <div className="playerPage-container">
       <Player currentTrack={state.currentPlaylist[state.currentTrackIndex]} />
@@ -36,6 +43,7 @@ export default function PlayerPage() {
   );
 }
 
+//Size variables for the spotify player component
 const size = {
   width: '100%',
   height: 300,
@@ -43,7 +51,8 @@ const size = {
 const view = 'list'; // or 'coverart'
 const theme = 'black'; // or 'white'
 
-function Player(props) {
+//Player functional component
+export function Player(props) {
   return (
     <SpotifyPlayer
       uri={`spotify:track:${props.currentTrack}`}
@@ -53,8 +62,3 @@ function Player(props) {
     />
   );
 }
-
-/*This functional component creates a recomended playlist via GQL mutation and then sets it to the MainContext.
-  also renders the player and the form for creating the playlist.*/
-
-//TODO separate the player rendering from this component

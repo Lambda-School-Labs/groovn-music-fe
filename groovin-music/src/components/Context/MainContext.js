@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 
+//Main context object used in the app.
 const MainContext = React.createContext({
   currentPlaylist: [],
   currentTrackIndex: 0,
 });
 
+//The only provider in the app. Set initial data of a recomened playlist
 const MainContextProvider = props => {
   const [state, setState] = useState({
     currentPlaylist: [
