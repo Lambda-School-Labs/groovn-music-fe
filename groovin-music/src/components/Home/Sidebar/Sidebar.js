@@ -4,12 +4,13 @@ import axios from 'axios';
 import './Sidebar.css';
 
 function logout() {
+  //document.cookie = 'connect.sid=';
   axios({
     method: 'GET',
-    url: 'http://localhost:4000/logout'
+    url: 'http://localhost:4000/logout',
   })
     .then(res => res)
-    .catch(err => console.log(err.message))
+    .catch(err => console.log(err.message));
 }
 
 export default function Sidebar() {
@@ -32,9 +33,9 @@ export default function Sidebar() {
         <NavLink className="navLink" to="/settings-page">
           Settings
         </NavLink>
-        <NavLink className="navLink" exact to="/" onClick={logout}>
+        <a className="navLink" href="http://localhost:4000/logout">
           Logout
-        </NavLink>
+        </a>
       </div>
     </div>
   );
