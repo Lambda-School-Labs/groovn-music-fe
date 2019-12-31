@@ -3,7 +3,6 @@ import { Redirect } from 'react-router-dom';
 import { gql } from 'apollo-boost';
 import { useQuery, useMutation } from '@apollo/react-hooks';
 import { MainContext } from '../../../Context/MainContext';
-
 import Playlist from '../PlaylistPage/Playlist.js';
 
 const CREATE_RECOMMENDED_PLAYLIST = gql`
