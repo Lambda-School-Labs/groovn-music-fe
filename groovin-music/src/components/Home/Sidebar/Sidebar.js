@@ -10,17 +10,11 @@ export default function Sidebar() {
         <NavLink className="navLink" to="/">
           Home
         </NavLink>
-        <NavLink className="navLink" to="/playlist-page">
-          Playlist
-        </NavLink>
-        <NavLink className="navLink" to="/discover-page">
-          Discover
-        </NavLink>
         <NavLink className="navLink" to="/player-page">
           Player
         </NavLink>
-        <NavLink className="navLink" to="/settings-page">
-          Settings
+        <NavLink className="navLink" to="/recommended-playlist">
+          Recommended Playlist
         </NavLink>
       </div>
     </div>

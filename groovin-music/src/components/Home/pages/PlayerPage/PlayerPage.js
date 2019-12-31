@@ -2,21 +2,36 @@ import React, { useState } from 'react';
 import './PlayerPage.css';
 
 import SpotifyPlayer from 'react-spotify-player';
-import { gql } from 'apollo-boost';
-import { useQuery, useMutation } from '@apollo/react-hooks';
 
-const CREATE_RECOMMENDED_PLAYLIST = gql`
-  mutation CreateRecommendedPlaylist($name: String!, $description: String) {
-    createRecommendedPlaylist(name: $name, description: $description) {
-      tracks
-    }
-  }
-`;
+import { MainContext } from '../../../Context/MainContext';
 
 export default function PlayerPage() {
+  const [state, setState] = React.useContext(MainContext);
+
+  const nextTrack = () => {
+    if (state.currentTrackIndex < state.currentPlaylist.length - 1) {
+      setState({ ...state, currentTrackIndex: state.currentTrackIndex + 1 });
+    } else {
+      setState({ ...state, currentTrackIndex: 0 });
+    }
+  };
+
+  const previousTrack = () => {
+    if (state.currentTrackIndex > 0) {
+      setState({ ...state, currentTrackIndex: state.currentTrackIndex - 1 });
+    } else {
+      setState({
+        ...state,
+        currentTrackIndex: state.currentPlaylist.length - 1,
+      });
+    }
+  };
+
   return (
     <div className="playerPage-container">
-      <RecommendedPlayist />
+      <Player currentTrack={state.currentPlaylist[state.currentTrackIndex]} />
+      <button onClick={previousTrack}>Previous Track</button>
+      <button onClick={nextTrack}>Next Track</button>
     </div>
   );
 }
@@ -39,91 +54,7 @@ function Player(props) {
   );
 }
 
-const RecommendedPlayist = () => {
-  console.log('here in the reced playlist function');
-  const [input, setInput] = useState({
-    name: '',
-    description: '',
-  });
+/*This functional component creates a recomended playlist via GQL mutation and then sets it to the MainContext.
+  also renders the player and the form for creating the playlist.*/
 
-  const [tracks, setTracks] = useState([]);
-  const [currentTrack, setCurrentTrack] = useState(0);
-
-  const [recommendedPlayist, { loading, data }] = useMutation(
-    CREATE_RECOMMENDED_PLAYLIST
-  );
-
-  const handleNameInput = event => {
-    setInput({ name: event.target.value, description: input.description });
-  };
-
-  const handleDescInput = event => {
-    setInput({ name: input.name, description: event.target.value });
-  };
-
-  const createPlaylist = async e => {
-    e.preventDefault();
-
-    const playlist = await recommendedPlayist({
-      variables: { name: input.name, description: input.description },
-    });
-
-    setInput({
-      name: '',
-      description: '',
-    });
-    setTracks(playlist.data.createRecommendedPlaylist.tracks);
-  };
-
-  const nextTrack = () => {
-    if (currentTrack < tracks.length - 1) {
-      setCurrentTrack(currentTrack + 1);
-    } else {
-      setCurrentTrack(0);
-    }
-  };
-
-  const previousTrack = () => {
-    if (currentTrack > 0) {
-      setCurrentTrack(currentTrack - 1);
-    } else {
-      setCurrentTrack(tracks.length - 1);
-    }
-  };
-
-  if (loading) {
-    return <div>{loading}</div>;
-  } else {
-    return (
-      <div>
-        <form onSubmit={createPlaylist}>
-          <input
-            type="text"
-            placeholder="Playlist Name"
-            name="name"
-            value={input.name}
-            onChange={handleNameInput}
-          />
-          <input
-            type="text"
-            placeholder="Playlist Description"
-            name="description"
-            value={input.description}
-            onChange={handleDescInput}
-          />
-          <button type="submit"> Create Playlist </button>
-        </form>
-        <Player currentTrack={tracks[currentTrack]} />
-        <button onClick={previousTrack}>Previous Track</button>
-        <button onClick={nextTrack}>Next Track</button>
-      </div>
-    );
-  }
-};
-
-const currentSong = {
-  songTitle: 'Test-SongTitle',
-  artistName: 'Test-ArtistName',
-  albumName: 'Test-AblumName',
-  songImg: 'https://i.redd.it/btchnm8ctq911.jpg',
-};
+//TODO separate the player rendering from this component
