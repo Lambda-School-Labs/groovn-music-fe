@@ -50,7 +50,7 @@ const PlaylistList = () => {
 export default function Playlists() {
   return (
     <div>
-      <h2>Playlists</h2>
+      <h3 className="section-title">Playlists</h3>
       <div className="homepage-item-container">
         <PlaylistList />
       </div>

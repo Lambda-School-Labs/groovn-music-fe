@@ -15,8 +15,7 @@ function logout() {
 
 export default function Sidebar() {
   return (
-    <div>
-      <input type="text" name="search" placeholder="search" />
+    <div className="side-bar">
       <div className="navLinks">
         <NavLink className="navLink" to="/">
           Home
@@ -34,3 +33,5 @@ export default function Sidebar() {
     </div>
   );
 }
+
+//      <input type="text" name="search" placeholder="search" />

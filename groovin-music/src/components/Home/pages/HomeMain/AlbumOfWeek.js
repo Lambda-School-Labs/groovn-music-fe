@@ -47,7 +47,10 @@ const RandomTrack = () => {
 
   return (
     <div className="album-container">
-      <div className="album-image" style={imageStyle}></div>
+      <img
+        className="album-image"
+        src={data.getLikedTracks[randomize()].albumCover}
+      ></img>
       <div className="album-text">
         <h2>{data.getLikedTracks[num].name}</h2>
         <h3>{data.getLikedTracks[num].albumName}</h3>
