@@ -13,10 +13,7 @@ function LandingPage() {
           <h3>get into the groove....</h3>
         </div>
 
-        <div className="search">
-          <input type="text" className="input" placeholder="Search ...." />
-          <ul>...</ul>
-        </div>
+        <div className="search"></div>
         <LandingHome />
       </body>
     </>
@@ -24,3 +21,6 @@ function LandingPage() {
 }
 
 export default LandingPage;
+
+//<input type="text" className="input" placeholder="Search ...." />
+//<ul>...</ul>
