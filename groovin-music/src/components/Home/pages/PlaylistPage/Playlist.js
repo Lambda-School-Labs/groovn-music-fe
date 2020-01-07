@@ -1,21 +1,10 @@
 import React from 'react';
 import './PlaylistPage.css';
 
-function PlaylistPage() {
-  return (
-    <div className="playlistPage-container">
-      <Playlist
-        playlistName={playlistName}
-        playlistImg={PlaylistImg}
-        tracks={testTracks}
-      />
-    </div>
-  );
-}
-
-export default PlaylistPage;
-
 function Playlist(props) {
+  if (props) {
+    return <div style={{ color: 'white' }}>rendering the playlist here</div>;
+  }
   return (
     <div className="playlist-container">
       <div className="playlist-header">
@@ -47,6 +36,8 @@ function Playlist(props) {
     </div>
   );
 }
+
+export default Playlist;
 
 //XML for the play butotn - still needs to be set up
 /*
