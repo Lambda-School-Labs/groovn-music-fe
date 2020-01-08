@@ -1,8 +1,9 @@
 import React from 'react';
-import { Route } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 
 import { MainContextProvider } from './components/Context/MainContext';
 import LandingPage from './components/landingPage/landingPage';
+import NotFound from './components/NotFound/NotFound';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute.js';
 
 import './App.css';
@@ -13,8 +14,11 @@ export default function App() {
   return (
     <MainContextProvider>
       <div className="App">
+      <Switch>
         <Route to exact path="/landing-page" component={LandingPage} />
         <Route exact to="/protected" component={PrivateRoute} />
+        <Route path="*" component={NotFound}/>
+      </Switch>
       </div>
     </MainContextProvider>
   );
