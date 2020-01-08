@@ -54,7 +54,7 @@ export default function Playlists() {
       <div className="homepage-item-container">
         <PlaylistList />
       </div>
-      <NavLink className="navLink" to="/discover-page">
+      <NavLink className="see-all" to="/discover-page">
         See All
       </NavLink>
     </div>

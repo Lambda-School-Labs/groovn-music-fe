@@ -70,7 +70,7 @@ export default function RecentlyPlayed() {
       <div className="homepage-item-container">
         <LikedSongs />
       </div>
-      <NavLink className="navLink" to="/playlist-page">
+      <NavLink className="see-all" to="/playlist-page">
         See All
       </NavLink>
     </div>
