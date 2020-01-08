@@ -4,7 +4,7 @@ import { useQuery } from '@apollo/react-hooks';
 import { NavLink, Redirect } from 'react-router-dom';
 import { MainContext } from '../../../Context/MainContext';
 
-import './HomeMain.css';
+//import './HomeMain.css';
 
 const TRACK_QUERY = gql`
   query tracks {
@@ -41,16 +41,12 @@ const LikedSongs = () => {
     return <div>Loading...</div>;
   } else if (error) {
     return <div>{error.message}</div>;
-  } else if (!data.getLikedTracks) {
-    return (
-      <div>
-        <p>No Liked Songs</p>
-      </div>
-    );
+  } else if(!data.getLikedTracks) {
+      return <div><p>No Liked Songs</p></div>;
   }
 
   let songList = data.getLikedTracks.map((song, index) => {
-    if (index < 4) {
+    if (index < 50) {
       return (
         <div className="homepage-item" key={song.albumName}>
           <img
@@ -72,13 +68,10 @@ const LikedSongs = () => {
 export default function RecentlyPlayed() {
   return (
     <div>
-      <h3 className="section-title">Liked Songs</h3>
+      <h2>Liked Songs</h2>
       <div className="homepage-item-container">
         <LikedSongs />
       </div>
-      <NavLink className="navLink" to="/liked-songs">
-        See All
-      </NavLink>
     </div>
   );
 }

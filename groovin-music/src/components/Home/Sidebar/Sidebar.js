@@ -26,6 +26,12 @@ export default function Sidebar() {
         <NavLink className="navLink" to="/recommended-playlist">
           Recommended Playlist
         </NavLink>
+        <NavLink className="navLink" to="/liked-songs">
+          Liked Songs
+        </NavLink>
+        <NavLink className="navLink" to="/playlist-page">
+          Playlists
+        </NavLink>
         <a className="navLink" href="http://localhost:4000/logout">
           Logout
         </a>
