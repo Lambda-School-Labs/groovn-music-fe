@@ -6,14 +6,14 @@ init commit staging
 
 🚫 Each student has a required minimum number of meaningful PRs each week per the rubric. Contributing to docs does NOT count as a PR to meet your weekly requirements.
 
-# 1️⃣ LabsPT5 - GroovnMusic
+# LabsPT5 - GroovnMusic
 
-1️⃣ You can find the deployed project at [🚫URL NAME GOES HERE](www.groovnmusic.com).
+You can find the deployed project at [🚫URL NAME GOES HERE](www.groovnmusic.com).
 
-## 4️⃣ GroovnMusic Developers
+## GroovnMusic Developers
 
 🚫Add contributor info below, make sure add images and edit the social links for each member. Add to or delete these place-holders as needed
-[DJ Zaragoza](https://github.com/djzaragoza) [Christopher Tutor](https://github.com/) [Douglas Campbell](https://github.com/)             [Robert Gant](https://github.com/) [Dominic Torruellas](https://github.com/) [Jason Pham](https://github.com/) [Jason Holloway](https://github.com/)                                      |--------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------: |
+[DJ Zaragoza](https://github.com/djzaragoza) [Christopher Tutor](https://github.com/) [Douglas Campbell](https://github.com/)             [Robert Gant](https://github.com/gant123) [Dominic Torruellas](https://github.com/djtorel) [Jason Pham](https://github.com/) [Jason Holloway](https://github.com/jjamaltwin)                                      |--------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------: |
 |                      [<img src="https://www.dalesjewelers.com/wp-content/uploads/2018/10/placeholder-silhouette-male.png" width = "200" />](https://github.com/)                       |                      [<img src="https://www.dalesjewelers.com/wp-content/uploads/2018/10/placeholder-silhouette-female.png" width = "200" />](https://github.com/)                       |                      [<img src="https://www.dalesjewelers.com/wp-content/uploads/2018/10/placeholder-silhouette-male.png" width = "200" />](https://github.com/)                       |                      [<img src="https://www.dalesjewelers.com/wp-content/uploads/2018/10/placeholder-silhouette-female.png" width = "200" />](https://github.com/)                       |                      [<img src="https://www.dalesjewelers.com/wp-content/uploads/2018/10/placeholder-silhouette-male.png" width = "200" />](https://github.com/)                       |
 |                 [<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/)                 |            [<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/honda0306)             |           [<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/Mister-Corn)            |          [<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/NandoTheessen)           |            [<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/wvandolah)             |
 | [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/) | [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/) | [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/) | [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/) | [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/) |
@@ -21,7 +21,7 @@ init commit staging
 <br>
 <br>
 
-🚫 4️⃣ Optional examples of using images with links for your tech stack, make sure to change these to fit your project
+Optional examples of using images with links for your tech stack, make sure to change these to fit your project
 
 ![MIT](https://img.shields.io/packagist/l/doctrine/orm.svg)
 ![React](https://img.shields.io/badge/react-v16.7.0--alpha.2-blue.svg)
@@ -33,11 +33,9 @@ init commit staging
 
 ## Project Overview
 
-1️⃣ [Trello Board](🚫add link to trello board here)
+[Trello Board](https://trello.com/b/wRlpwQHc/groovn-music)
 
-1️⃣ [Product Canvas](🚫add link to product canvas here)
-
-1️⃣ [UX Design files](🚫add link to design files here) - 🚫 delete if not applicable
+[Product Canvas]()
 
 🚫 Replace lorem ipsum with a description of your project
 
@@ -46,24 +44,22 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 
-### 4️⃣ Key Features
+### Key Features
 
--    feature one
--    feature two
--    feature three
--    feature four
--    feature five
+-    Ability for the user to generate a recommended playlist based by "Liked" songs
+-    User-friendly, ease of navigation
+-    Millions of songs to explore
 
-## 1️⃣ Tech Stack
+## Tech Stack
 
 ### Front end built using:
 
-#### _Front end framework goes here_
+#### React | React Hooks / Context | Passport.js and OAuth 
 
 🚫 Why did you choose this framework?
 
--    point one
--    point two
+-    We decided to utilize React and React Hooks library because of the power it can provide to our product.  Utilizing the Hooks concpt by neglecting the use of writing a class was time-saving.  
+-    Deviding to use React Context was a simple and smart decision by our team mainly because of it being a big part of the React library.  It gave us the ability to pass data through a component with ease.  A great way to stream line writing code.
 -    point three
 -    point four
 
