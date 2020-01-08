@@ -28,7 +28,13 @@ const PlaylistList = () => {
     return <div>Loading...</div>;
   } else if (error) {
     return <div>{error.message}</div>;
-  }
+  } else if (!data.getPlaylists) {
+    return (
+      <div>
+        <p>No Playlists</p>
+      </div>
+    );
+  } 
 
   let playlists = data.getPlaylists.map((playlist, index) => {
     if (index < 4) {
@@ -54,7 +60,7 @@ export default function Playlists() {
       <div className="homepage-item-container">
         <PlaylistList />
       </div>
-      <NavLink className="navLink" to="/discover-page">
+      <NavLink className="navLink" to="/playlist-page">
         See All
       </NavLink>
     </div>
