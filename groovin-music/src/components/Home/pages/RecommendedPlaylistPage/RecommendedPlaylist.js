@@ -13,6 +13,16 @@ const CREATE_RECOMMENDED_PLAYLIST = gql`
   }
 `;
 
+//query tp get current user's saved tracks
+
+const GET_SAVED_TRACKS = gql`
+  query getLikedTracks() {
+    getLikedTracks() {
+      id
+    }
+  }
+`;
+
 const GET_TRACK_INFO = gql`
   query getTracksInfo($tracks: [String]!) {
     getTracksInfo(tracks: $tracks) {
@@ -27,20 +37,20 @@ const GET_TRACK_INFO = gql`
   }
 `;
 
-const PlaylistView = props => {
-  console.log('PlaylistView');
-  const { loading, error, data } = useQuery(GET_TRACK_INFO, props.tracks, {
-    notifyOnNetworkChange: true,
-  });
+// const PlaylistView = props => {
+//   console.log('PlaylistView');
+//   const { loading, error, data } = useQuery(GET_TRACK_INFO, props.tracks, {
+//     notifyOnNetworkChange: true,
+//   });
 
-  if (loading) {
-    return <div style={{ color: 'white' }}>Loading</div>;
-  }
+//   if (loading) {
+//     return <div style={{ color: 'white' }}>Loading</div>;
+//   }
 
-  if (data) {
-    return <div style={{ color: 'white' }}>Got the data</div>;
-  }
-};
+//   if (data) {
+//     return <div style={{ color: 'white' }}>Got the data</div>;
+//   }
+// };
 
 const RecommendedPlayist = props => {
   const [state, setState] = React.useContext(MainContext);
@@ -81,7 +91,7 @@ const RecommendedPlayist = props => {
   };
 
   if (loading) {
-    return <div style={{ color: 'wite', fontSize: 24 }}>{loading}</div>;
+    return <div style={{ color: 'white', fontSize: 24 }}>{loading}</div>;
   } else if (data) {
     return <Redirect to="/player-page" />;
   } else {
