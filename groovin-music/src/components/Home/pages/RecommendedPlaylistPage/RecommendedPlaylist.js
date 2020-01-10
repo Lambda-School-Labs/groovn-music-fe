@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Redirect } from 'react-router-dom';
 import { gql } from 'apollo-boost';
 import { useQuery, useMutation } from '@apollo/react-hooks';
@@ -13,12 +13,13 @@ const CREATE_RECOMMENDED_PLAYLIST = gql`
   }
 `;
 
-//query tp get current user's saved tracks
+//query to get current user's saved tracks
 
 const GET_SAVED_TRACKS = gql`
-  query getLikedTracks() {
-    getLikedTracks() {
+  query getLikedTracks {
+    getLikedTracks {
       id
+      name
     }
   }
 `;
@@ -37,31 +38,17 @@ const GET_TRACK_INFO = gql`
   }
 `;
 
-// const PlaylistView = props => {
-//   console.log('PlaylistView');
-//   const { loading, error, data } = useQuery(GET_TRACK_INFO, props.tracks, {
-//     notifyOnNetworkChange: true,
-//   });
 
-//   if (loading) {
-//     return <div style={{ color: 'white' }}>Loading</div>;
-//   }
 
-//   if (data) {
-//     return <div style={{ color: 'white' }}>Got the data</div>;
-//   }
-// };
-
-const RecommendedPlayist = props => {
+//component
+const RecommendedPlaylist = props => {
   const [state, setState] = React.useContext(MainContext);
-
-  //Hook set up for input
   const [input, setInput] = useState({
     name: '',
     description: '',
   });
 
-  const [recommendedPlayist, { loading, data }] = useMutation(
+  const [recommendedPlaylist, { loading, data }] = useMutation(
     CREATE_RECOMMENDED_PLAYLIST
   );
 
@@ -73,10 +60,9 @@ const RecommendedPlayist = props => {
     setInput({ name: input.name, description: event.target.value });
   };
 
-  const createPlaylist = async e => {
-    e.preventDefault();
+  const createPlaylist = async () => {
 
-    const playlist = await recommendedPlayist({
+    const playlist = await recommendedPlaylist({
       variables: { name: input.name, description: input.description },
     });
 
@@ -84,12 +70,51 @@ const RecommendedPlayist = props => {
       name: '',
       description: '',
     });
-    setState({
-      ...state,
-      currentPlaylist: playlist.data.createRecommendedPlaylist.tracks,
-    });
+    if(playlist) {
+      setState({
+        ...state,
+        currentPlaylist: playlist.data.createRecommendedPlaylist.tracks,
+      });
+    } else {
+      console.log("error")
+    }
   };
 
+  
+  const queryPlaylist = useQuery(GET_SAVED_TRACKS, { notifyOnNetworkStatusChange: true })
+  
+
+  const getCurrentUserRecommendations = (e) => {
+    e.preventDefault();
+    // 1. perform query
+    console.log("hit!")
+    if(queryPlaylist.loading) {
+      return (
+        <div>
+          Loading............
+        </div>
+      )
+    }
+    if(queryPlaylist.data) {
+      // 2. set results of query on context via setState
+
+      setState({currentPlaylist: queryPlaylist.data.getLikedTracks});
+      console.log(state);
+      
+      // 3. create recommended playlist
+      const newPlaylist = createPlaylist();
+      console.log(newPlaylist);
+    }
+    else {
+      return <div>{queryPlaylist.error}</div>
+    }
+
+
+
+
+  }
+  //Hook set up for input
+  
   if (loading) {
     return <div style={{ color: 'white', fontSize: 24 }}>{loading}</div>;
   } else if (data) {
@@ -97,7 +122,7 @@ const RecommendedPlayist = props => {
   } else {
     return (
       <div>
-        <form onSubmit={createPlaylist}>
+        <form onSubmit={getCurrentUserRecommendations}>
           <input
             type="text"
             placeholder="Playlist Name"
@@ -119,4 +144,4 @@ const RecommendedPlayist = props => {
   }
 };
 
-export default RecommendedPlayist;
+export default RecommendedPlaylist;
