@@ -88,6 +88,7 @@ const RecommendedPlayist = props => {
     return (
       <div className="rec-playlist-container">
         <form onSubmit={createPlaylist}>
+          <h2>Create a recommened playlist based on your liked songs </h2>
           <input
             type="text"
             placeholder="Playlist Name"
