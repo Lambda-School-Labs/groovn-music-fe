@@ -7,41 +7,26 @@ Deployed app ======> [GroovnMusic](www.groovnmusic.com).
 [<img src="https://www.dalesjewelers.com/wp-content/uploads/2018/10/placeholder-silhouette-male.png" width = "200" />]
 [DJ Zaragoza](https://github.com/djzaragoza) 
 [<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/djzaragoza)
-[ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/dj-zaragoza-38479212) |
-
-[<img src="https://www.dalesjewelers.com/wp-content/uploads/2018/10/placeholder-silhouette-female.png" width = "200" />]
+[ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/dj-zaragoza-38479212)| [<img src="https://www.dalesjewelers.com/wp-content/uploads/2018/10/placeholder-silhouette-male.png" width = "200" />]
 [Christopher Tutor](https://github.com/pherpher089) 
-
-[<img src="https://www.dalesjewelers.com/wp-content/uploads/2018/10/placeholder-silhouette-male.png" width = "200" />]
+[<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/pherpher089) 
+[ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/christopher-tutor-68a3b796/)| [<img src="https://www.dalesjewelers.com/wp-content/uploads/2018/10/placeholder-silhouette-male.png" width = "200" />]
 [Douglas Campbell](https://github.com/Campbelld84) 
-
-[<img src="https://www.dalesjewelers.com/wp-content/uploads/2018/10/placeholder-silhouette-female.png" width = "200" />]
+[<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/Campbelld84) 
+[ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/douglas-campbell-dev)| [<img src="https://www.dalesjewelers.com/wp-content/uploads/2018/10/placeholder-silhouette-male.png" width = "200" />]
 [Robert Gant](https://github.com/gant123) 
-
-[<img src="https://www.dalesjewelers.com/wp-content/uploads/2018/10/placeholder-silhouette-male.png" width = "200" />]
+[<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/gant123)
+[ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/)| [<img src="https://www.dalesjewelers.com/wp-content/uploads/2018/10/placeholder-silhouette-male.png" width = "200" />]
 [Dominic Torruellas](https://github.com/djtorel) 
-
-[<img src="https://www.dalesjewelers.com/wp-content/uploads/2018/10/placeholder-silhouette-male.png" width = "200" />]
+[<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/djtorel)
+[ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/)| [<img src="https://www.dalesjewelers.com/wp-content/uploads/2018/10/placeholder-silhouette-male.png" width = "200" />]
 [Jason Pham](https://github.com/extrajp2014) 
-
-[<img src="https://www.dalesjewelers.com/wp-content/uploads/2018/10/placeholder-silhouette-male.png" width = "200" />]
+[<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/extrajp2014) 
+[ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/)| [<img src="https://www.dalesjewelers.com/wp-content/uploads/2018/10/placeholder-silhouette-male.png" width = "200" />]
 [Jason Holloway](https://github.com/jjamaltwin)
-
-
-(https://github.com/)                       |                      (https://github.com/)                       |                      (https://github.com/)                       |                      [<img src="https://www.dalesjewelers.com/wp-content/uploads/2018/10/placeholder-silhouette-male.png" width = "200" />](https://github.com/)                       |
-|                 
-                             
-[<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/honda0306)                        
-[<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/Mister-Corn)                     
-[<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/NandoTheessen)                      
-[<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/wvandolah)             
-
- 
-[ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/) | 
-[ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/) | 
-[ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/) | 
-[ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/) |
-
+[<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/jjamaltwin) 
+[ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/)|
+                          
 <br>
 <br>
 
