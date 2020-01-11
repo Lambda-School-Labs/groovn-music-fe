@@ -1,14 +1,6 @@
-init commit staging
-
-🚫 Note: All lines that start with 🚫 are instructions and should be deleted before this is posted to your portfolio. This is intended to be a guideline, feel free to add your own flare to it.
-
-🚫 The numbers 1️⃣ through 5️⃣ next to each item represent the week that part of the docs needs to be comepleted by.  Make sure to delete the numbers by the end of Labs.
-
-🚫 Each student has a required minimum number of meaningful PRs each week per the rubric. Contributing to docs does NOT count as a PR to meet your weekly requirements.
-
 # LabsPT5 - GroovnMusic
 
-You can find the deployed project at [GroovnMusic](www.groovnmusic.com).
+Deployed app ======> [GroovnMusic](www.groovnmusic.com).
 
 ## GroovnMusic Developers
 
@@ -28,7 +20,7 @@ You can find the deployed project at [GroovnMusic](www.groovnmusic.com).
 
 What is GroovnMusic?
 
-CONTENT 1
+GroovnMusic is a re-imagined music app that allows users to create a personalized playlist solely recommended for them, based on songs they like.
 
 CONTENT 2
 
@@ -36,6 +28,7 @@ CONTENT 2
 ### Key Features
 
 -    Ability for the user to generate a recommended playlist based by "Liked" songs
+-    Personalized playlists
 -    User-friendly, ease of navigation
 -    Millions of songs to explore
 
@@ -72,24 +65,48 @@ List the rest of the front end features and libraries in the same format as the 
 
 We decided to use the Spotify API mainly for build time and production.  We wanted our users to have the ability to create a playlist and play their music.  By using Spotify's API, it's based on REST principles and the endpoints return JSON metadata about music artists, albums, and tracks, directly from the Spotify Data Catalogue.  It also provides access to user related data, like playlists and music that the user saves in their music library.
 
-# 3️⃣ Environment Variables
+class SpotifyAPI extends RESTDataSource {
+  constructor() {
+    super();
+    this.baseURL = 'https://api.spotify.com/v1/me';
+  }
 
-In order for the app to function correctly, the user must set up their own environment variables. There should be a .env file containing the following:
+  async getSavedTracks(token) {
+    return await this.get('tracks', null, {
+      headers: {
+        Authorization: 'Bearer ' + token,
+      },
+    });
+  }
+}
 
-🚫These are just examples, replace them with the specifics for your app
+export default SpotifyAPI;
 
-    *  REACT_APP_apiKey - this is your Google API key, which can be generated in the Google Cloud Console
-    *  REACT_APP_authDomain - when you set up your Firebase project, this information will be in the dashboard
-    *  REACT_APP_databaseURL - in the Firebase dashboard
-    *  REACT_APP_projectID - in the Firebase dashboard
-    *  REACT_APP_storageBucket - in the Firebase dashboard
-    *  REACT_APP_messagingSenderId - in the Firebase dashboard
-    *  REACT_APP_stripe_API - this is your public Stripe API key, generated in the Stripe dashboard
-    *  REACT_APP_backendURL - optional for your local development server
-    *  REACT_APP_clientid - this is the Stripe_connect clientID, generated in Stripe_connect settings
-    *  REACT_APP_stripe_plan - this is the ID for a second Stripe subscription plan, generated under Stripe products
+## Context API
 
-# 5️⃣ Content Licenses
+We used the Context API solely-based on using the React library.  Utilizing Context, it creates an object for us.  Once React renders a componentk that subscribes to a Context object, it will read the context value closest to the matching Provider above in the tree. 
+
+export default function App() {
+  return (
+    <MainContextProvider>
+      <div className="app">
+        <Route to exact path="/landing-page" component={LandingPage} />
+        <Route exact to="/protected" component={PrivateRoute} />
+      </div>
+    </MainContextProvider>
+  );
+}
+
+# Environment Variables
+
+DEV_DATABASE_URL=‘mongodb://localhost:27017/groovn’ - app database
+SPOTIFY_CLIENT_ID=‘abe6bf42ad914ede9a28b1c8db260cb8’ - Spotify user ID
+SPOTIFY_CLIENT_SECRET=‘891af5d42954449f9c9660b6f11dfa3b’ - key used for Spotify users logging in and out
+SESSION_SECRET=‘d%wP3p&uQ&8&%TzZh@uzf!y#J%*!WR4X’ - key used for signing and/or encrypting cookies set by our app
+PORT=‘4000’ - port used for our app
+NODE_ENV = ‘Development’ - development environment
+
+# Content Licenses
 
 🚫For all content - images, icons, etc, use this table to document permission of use. Remove the two placeholders and add you content to this table
 
@@ -98,11 +115,11 @@ In order for the app to function correctly, the user must set up their own envir
 | doodles.png    | Nicole Bennett   | [Creative Commons](https://www.toptal.com/designers/subtlepatterns/doodles/) |
 | rings.svg      | Sam Herbert      | [MIT](https://github.com/SamHerbert/SVG-Loaders)                             |
 
-# 4️⃣ Testing
+# Testing
 
 🚫Document what you used for testing and why
 
-# 4️⃣ Installation Instructions
+# Installation Instructions
 
 🚫explain how to install the required dependencies to get this project up and running with yarn and NPM
 
