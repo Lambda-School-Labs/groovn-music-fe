@@ -22,9 +22,6 @@ What is GroovnMusic?
 
 GroovnMusic is a re-imagined music app that allows users to create a personalized playlist solely recommended for them, based on songs they like.
 
-CONTENT 2
-
-
 ### Key Features
 
 -    Ability for the user to generate a recommended playlist based by "Liked" songs
@@ -42,10 +39,6 @@ Why did you choose this framework?
 
 -    We decided to utilize React and React Hooks library because of the power it can provide to our product.  Utilizing the Hooks concpt by neglecting the use of writing a class was time-saving.  
 -    Deviding to use React Context was a simple and smart decision by our team mainly because of it being a big part of the React library.  It gave us the ability to pass data through a component with ease.  A great way to stream line writing code.
--    point three
--    point four
-
-List the rest of the front end features and libraries in the same format as the framework above.
 
 #### Front end deployed to `http://groovn-frontend-prod.netlify.com/`
 
@@ -108,12 +101,10 @@ NODE_ENV = ‘Development’ - development environment
 
 # Content Licenses
 
-🚫For all content - images, icons, etc, use this table to document permission of use. Remove the two placeholders and add you content to this table
-
-| Image Filename | Source / Creator | License                                                                      |
-| -------------- | ---------------- | ---------------------------------------------------------------------------- |
-| doodles.png    | Nicole Bennett   | [Creative Commons](https://www.toptal.com/designers/subtlepatterns/doodles/) |
-| rings.svg      | Sam Herbert      | [MIT](https://github.com/SamHerbert/SVG-Loaders)                             |
+| Image/License(s) Filename | Source / Creator | License                                                                      |
+| ------------------------- | ---------------- | ---------------------------------------------------------------------------- |
+| Spotify API               | Team             | [Spotify API](https://developer.spotify.com/terms/#iii) |
+|                           | Team             | [MIT](https://github.com/SamHerbert/SVG-Loaders)                             |
 
 # Testing
 
