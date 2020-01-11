@@ -4,7 +4,7 @@ Deployed app ======> [GroovnMusic](www.groovnmusic.com).
 
 ## GroovnMusic Developers
 
-[<img src="https://www.dalesjewelers.com/wp-content/uploads/2018/10/placeholder-silhouette-male.png" width = "200" />]
+[<img src="https://avatars0.githubusercontent.com/u/47765271?s=460&v=4" width = "200" />]
 [DJ Zaragoza](https://github.com/djzaragoza) 
 [<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/djzaragoza)
 [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/dj-zaragoza-38479212)| [<img src="https://www.dalesjewelers.com/wp-content/uploads/2018/10/placeholder-silhouette-male.png" width = "200" />]
