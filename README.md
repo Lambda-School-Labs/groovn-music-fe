@@ -122,11 +122,24 @@ NODE_ENV = ‘Development’ - development environment
 | Image/License(s) Filename | Source / Creator | License                                                                      |
 | ------------------------- | ---------------- | ---------------------------------------------------------------------------- |
 | Spotify API               | Team             | [Spotify API](https://developer.spotify.com/terms/#iii) |
-|                           | Team             | [MIT](https://github.com/SamHerbert/SVG-Loaders)                             |
 
 # Testing
 
-🚫Document what you used for testing and why
+Testing of this application was very important and crucial for the overall success of the app and its functionality.  
+
+Each developer did a series of tests on both front-end and back-end to ensure the overall functionality was working.  The following tests were completed throughout the build:
+  - user authentication
+  - routes
+  - database
+  - queries created
+  - playlist creation
+  - recommendation engine
+  - recommended playlist
+  - component functionality 
+
+In addition, all pull requests were reviewed by one or more team members, and merges were supervised by our project manager.
+
+The application for the most part was set up to continuously deploy to Netlify and Heroku. 
 
 # Installation Instructions
 
