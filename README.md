@@ -22,7 +22,7 @@ Deployed app ======> [GroovnMusic](www.groovnmusic.com).
 [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/in/dom-torr) [<img src="https://avatars0.githubusercontent.com/u/36387815?s=460&v=4" width = "100" />]
 [ Jason Pham ](https://github.com/extrajp2014) 
 [<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/extrajp2014) 
-[ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/) [<img src="https://avatars0.githubusercontent.com/u/43683321?s=460&v=4" width = "100" />]
+[ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/in/jason-pham-146950180) [<img src="https://avatars0.githubusercontent.com/u/43683321?s=460&v=4" width = "100" />]
 [ Jason Holloway ](https://github.com/jjamaltwin)
 [<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/jjamaltwin) 
 [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/)
