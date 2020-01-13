@@ -143,16 +143,59 @@ The application for the most part was set up to continuously deploy to Netlify a
 
 # Installation Instructions
 
-🚫explain how to install the required dependencies to get this project up and running with yarn and NPM
+Environment Variables
 
-## Other Scripts
+DEV_DATABASE_URL=‘mongodb://localhost:27017/groovn’ - app database
+SPOTIFY_CLIENT_ID=‘abe6bf42ad914ede9a28b1c8db260cb8’ - Spotify user ID
+SPOTIFY_CLIENT_SECRET=‘891af5d42954449f9c9660b6f11dfa3b’ - key used for Spotify users logging in and out
+SESSION_SECRET=‘d%wP3p&uQ&8&%TzZh@uzf!y#J%*!WR4X’ - key used for signing and/or encrypting cookies set by our app
+PORT=‘4000’ - port used for our app
+NODE_ENV = ‘Development’ - development environment
 
-🚫replace these examples with your own
+- Please see Passport.js Spotify strategy for additional variable http://www.passportjs.org/packages/passport-spotify/
 
-    * typecheck - runs the TypeScript compiler
-    * build - creates a build of the application
-    * start - starts the production server after a build is created
-    * test - runs tests in **tests** directory \* eject - copy the configuration files and dependencies into the project so you have full control over them
+[build]
+base = "groovin-music/"
+publish = "build/"
+command = "yarn build"
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200
+
+Using the application
+
+Requirements:
+
+- Node
+- Package Manager (such as Yarn or npm)
+- Yarn was used to build this project.
+Have Node? Have Yarn or npm? Follow these steps:
+
+Fork and clone repo
+
+Add an .env file to both client and server sides at the root of the folder (same level as the package.json file).
+
+Add environmental variables for both the frontend and the backend.
+
+Open terminal and cd into the server folder and run yarn install to install the necessary node_modules on the backend.
+
+cd into the client folder and run yarn install to install the necessary node_modules on the frontend.
+
+Run yarn start on the client folder to run the frontend on localhost:3000
+
+Run yarn start on the server folder to run the backend on localhost:4000
+
+Your application is now running and can be tested locally.
+
+Spotify Account creation
+
+In order to use the application, the user needs to have a Spotify account (free or premium).  If the user does not have an account, follow these steps:
+
+1. Go to www.spotify.com
+2. Click on "Sign In" from top-right corner of website
+3. Fill out all required fields
+4. Click "Sign Up"
 
 # Contributing
 
