@@ -1,26 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
+import { Route, Switch } from 'react-router-dom';
+
+import { MainContextProvider } from './components/Context/MainContext';
+import LandingPage from './components/landingPage/landingPage';
+import NotFound from './components/NotFound/NotFound';
+import PrivateRoute from './components/PrivateRoute/PrivateRoute.js';
+
 import './App.css';
 
-function App() {
+// Base level component. There are two routes witch are rendered based on authentication. The main context provider is set us around the rest of the App.
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <MainContextProvider>
+      <div className="app">
+        <Route to exact path="/landing-page" component={LandingPage} />
+        <Route exact to="/protected" component={PrivateRoute} />
+        <Route path="*" component={NotFound} />
+      </div>
+    </MainContextProvider>
   );
 }
-
-export default App;
