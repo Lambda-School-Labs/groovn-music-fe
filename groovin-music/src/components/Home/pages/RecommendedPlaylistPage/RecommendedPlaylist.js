@@ -5,6 +5,9 @@ import { useQuery, useMutation } from '@apollo/react-hooks';
 import { MainContext } from '../../../Context/MainContext';
 import './RecommendedPlaylist.css';
 
+///////////////
+//GQL QUERIES//
+///////////////
 const CREATE_RECOMMENDED_PLAYLIST = gql`
   mutation CreateRecommendedPlaylist($name: String!, $description: String) {
     createRecommendedPlaylist(name: $name, description: $description) {
@@ -27,21 +30,34 @@ const GET_TRACK_INFO = gql`
   }
 `;
 
+/////////////////////////////
+// DISPLAY SONGS COMPONENT //
+/////////////////////////////
 const PlaylistView = props => {
   console.log('PlaylistView');
-  const { loading, error, data } = useQuery(GET_TRACK_INFO, props.tracks, {
-    notifyOnNetworkChange: true,
+  const { loading, error, data } = useQuery(GET_TRACK_INFO, {
+    variables: { tracks: ['1nnUrCxOSuGhfR0elOI2ZQ'] },
   });
 
   if (loading) {
     return <div style={{ color: 'white' }}>Loading</div>;
   }
-
   if (data) {
     return <div style={{ color: 'white' }}>Got the data</div>;
   }
+  if (error) {
+    console.log(error);
+    return (
+      <div style={{ color: 'white', fontSize: '25rem' }}>Got the error</div>
+    );
+  }
+
+  return <div style={{ color: 'white' }}>Got nothing</div>;
 };
 
+//////////////////
+//MAIN COMPONENT//
+//////////////////
 const RecommendedPlayist = props => {
   const [state, setState] = React.useContext(MainContext);
 
@@ -83,7 +99,8 @@ const RecommendedPlayist = props => {
   if (loading) {
     return <div style={{ color: 'wite', fontSize: 24 }}>{loading}</div>;
   } else if (data) {
-    return <Redirect to="/player-page" />;
+    console.log(data);
+    return <PlaylistView tracks={state.currentPlaylist} />;
   } else {
     return (
       <div className="rec-playlist-container">
@@ -111,3 +128,5 @@ const RecommendedPlayist = props => {
 };
 
 export default RecommendedPlayist;
+
+//return <Redirect to="/player-page" />;
