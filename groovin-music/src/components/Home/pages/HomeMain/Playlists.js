@@ -36,6 +36,7 @@ const PlaylistList = () => {
     );
   }
 
+
   let playlists = data.getPlaylists.map((playlist, index) => {
     if (index < 4) {
       return (
