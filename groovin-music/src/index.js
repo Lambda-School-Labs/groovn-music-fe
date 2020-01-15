@@ -9,7 +9,7 @@ import './index.css';
 
 const client = new ApolloClient({
   // client ready to fetch data
-  uri: 'http://localhost:4000/graphql',
+  uri: 'https://groovn-backend-prod.herokuapp.com/',
   credentials: 'include',
 });
 
