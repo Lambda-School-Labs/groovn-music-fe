@@ -16,8 +16,7 @@ export default function App() {
       <div className="app">
         <Route to exact path="/landing-page" component={LandingPage} />
         <Route exact to="/protected" component={PrivateRoute} />
-        <Route path="*" component={NotFound}/>
-      </Switch>
+        <Route path="*" component={NotFound} />
       </div>
     </MainContextProvider>
   );
