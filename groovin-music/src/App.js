@@ -13,8 +13,7 @@ import './App.css';
 export default function App() {
   return (
     <MainContextProvider>
-      <div className="App">
-      <Switch>
+      <div className="app">
         <Route to exact path="/landing-page" component={LandingPage} />
         <Route exact to="/protected" component={PrivateRoute} />
         <Route path="*" component={NotFound}/>

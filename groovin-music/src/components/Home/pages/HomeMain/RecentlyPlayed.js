@@ -72,11 +72,11 @@ const LikedSongs = () => {
 export default function RecentlyPlayed() {
   return (
     <div>
-      <h2>Liked Songs</h2>
+      <h3 className="section-title">Liked Songs</h3>
       <div className="homepage-item-container">
         <LikedSongs />
       </div>
-      <NavLink className="navLink" to="/liked-songs">
+      <NavLink className="see-all" to="/liked-songs">
         See All
       </NavLink>
     </div>

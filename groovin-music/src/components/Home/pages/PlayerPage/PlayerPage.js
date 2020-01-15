@@ -37,15 +37,17 @@ export default function PlayerPage() {
   return (
     <div className="playerPage-container">
       <Player currentTrack={state.currentPlaylist[state.currentTrackIndex]} />
-      <button onClick={previousTrack}>Previous Track</button>
-      <button onClick={nextTrack}>Next Track</button>
+      <div className="skip-btn">
+        <button onClick={previousTrack}>&#8920; Previous Track</button>
+        <button onClick={nextTrack}>Next Track &#8921;</button>
+      </div>
     </div>
   );
 }
 
 //Size variables for the spotify player component
 const size = {
-  width: '100%',
+  width: '90%',
   height: 300,
 };
 const view = 'list'; // or 'coverart'
