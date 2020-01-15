@@ -1,162 +1,201 @@
-init commit staging
+# LabsPT5 - GroovnMusic
 
-🚫 Note: All lines that start with 🚫 are instructions and should be deleted before this is posted to your portfolio. This is intended to be a guideline, feel free to add your own flare to it.
+Deployed app ======> [GroovnMusic](www.groovnmusic.com).
 
-🚫 The numbers 1️⃣ through 5️⃣ next to each item represent the week that part of the docs needs to be comepleted by.  Make sure to delete the numbers by the end of Labs.
+## GroovnMusic Developers
 
-🚫 Each student has a required minimum number of meaningful PRs each week per the rubric. Contributing to docs does NOT count as a PR to meet your weekly requirements.
-
-# 1️⃣ Title of project goes here
-
-1️⃣ You can find the deployed project at [🚫URL NAME GOES HERE](🚫copy and paste URL here).
-
-## 4️⃣ Contributors
-
-🚫Add contributor info below, make sure add images and edit the social links for each member. Add to or delete these place-holders as needed
-
-|                                       [Student 1](https://github.com/)                                        |                                       [Student 2](https://github.com/)                                        |                                       [Student 3](https://github.com/)                                        |                                       [Student 4](https://github.com/)                                        |                                       [Student 5](https://github.com/)                                        |
-| :-----------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------: |
-|                      [<img src="https://www.dalesjewelers.com/wp-content/uploads/2018/10/placeholder-silhouette-male.png" width = "200" />](https://github.com/)                       |                      [<img src="https://www.dalesjewelers.com/wp-content/uploads/2018/10/placeholder-silhouette-female.png" width = "200" />](https://github.com/)                       |                      [<img src="https://www.dalesjewelers.com/wp-content/uploads/2018/10/placeholder-silhouette-male.png" width = "200" />](https://github.com/)                       |                      [<img src="https://www.dalesjewelers.com/wp-content/uploads/2018/10/placeholder-silhouette-female.png" width = "200" />](https://github.com/)                       |                      [<img src="https://www.dalesjewelers.com/wp-content/uploads/2018/10/placeholder-silhouette-male.png" width = "200" />](https://github.com/)                       |
-|                 [<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/)                 |            [<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/honda0306)             |           [<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/Mister-Corn)            |          [<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/NandoTheessen)           |            [<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/wvandolah)             |
-| [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/) | [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/) | [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/) | [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/) | [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/) |
-
+[<img src="https://avatars0.githubusercontent.com/u/47765271?s=460&v=4" width = "100" />]
+[ DJ Zaragoza ](https://github.com/djzaragoza) 
+[<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/djzaragoza)
+[ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/in/dj-zaragoza-38479212) [<img src="https://avatars3.githubusercontent.com/u/12819528?s=460&v=4" width = "100" />]
+[ Christopher Tutor ](https://github.com/pherpher089) 
+[<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/pherpher089) 
+[ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/in/christopher-tutor-68a3b796/) [<img src="https://avatars1.githubusercontent.com/u/7123647?s=460&v=4" width = "100" />]
+[ Douglas Campbell ](https://github.com/Campbelld84) 
+[<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/Campbelld84) 
+[ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/in/douglas-campbell-dev) [<img src="https://avatars1.githubusercontent.com/u/24638769?s=460&v=4" width = "100" />]
+[ Robert Gant ](https://github.com/gant123) 
+[<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/gant123)
+[ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/in/robert-gant-258978105) [<img src="https://avatars0.githubusercontent.com/u/330607?s=460&v=4" width = "100" />]
+[ Dominic Torruellas ](https://github.com/djtorel) 
+[<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/djtorel)
+[ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/in/dom-torr) [<img src="https://avatars0.githubusercontent.com/u/36387815?s=460&v=4" width = "100" />]
+[ Jason Pham ](https://github.com/extrajp2014) 
+[<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/extrajp2014) 
+[ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/in/jason-pham-146950180) [<img src="https://avatars0.githubusercontent.com/u/43683321?s=460&v=4" width = "100" />]
+[ Jason Holloway ](https://github.com/jjamaltwin)
+[<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/jjamaltwin) 
+[ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/)
+                      
 <br>
 <br>
-
-🚫 4️⃣ Optional examples of using images with links for your tech stack, make sure to change these to fit your project
-
-![MIT](https://img.shields.io/packagist/l/doctrine/orm.svg)
-![React](https://img.shields.io/badge/react-v16.7.0--alpha.2-blue.svg)
-![Typescript](https://img.shields.io/npm/types/typescript.svg?style=flat)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/b5c4db1c-b10d-42c3-b157-3746edd9e81d/deploy-status)](netlify link goes in these parenthesis)
-[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
-
-🚫 more info on using badges [here](https://github.com/badges/shields)
 
 ## Project Overview
 
-1️⃣ [Trello Board](🚫add link to trello board here)
+[Trello Board](https://trello.com/b/wRlpwQHc/groovn-music)
 
-1️⃣ [Product Canvas](🚫add link to product canvas here)
+[Product Canvas]()
 
-1️⃣ [UX Design files](🚫add link to design files here) - 🚫 delete if not applicable
+What is GroovnMusic?
 
-🚫 Replace lorem ipsum with a description of your project
+GroovnMusic is a re-imagined music app that allows users to create a personalized playlist solely recommended for them, based on songs they like.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+### Key Features
 
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+-    Ability for the user to generate a recommended playlist based by "Liked" songs
+-    Personalized playlists
+-    User-friendly, ease of navigation
+-    Millions of songs to explore
 
-
-### 4️⃣ Key Features
-
--    feature one
--    feature two
--    feature three
--    feature four
--    feature five
-
-## 1️⃣ Tech Stack
+## Tech Stack
 
 ### Front end built using:
 
-#### _Front end framework goes here_
+#### React | React Hooks / Context | Passport.js and OAuth 
 
-🚫 Why did you choose this framework?
+Why did you choose this framework?
 
--    point one
--    point two
--    point three
--    point four
+-    We decided to utilize React and React Hooks library because of the power it can provide to our product.  Utilizing the Hooks concpt by neglecting the use of writing a class was time-saving.  
+-    Deviding to use React Context was a simple and smart decision by our team mainly because of it being a big part of the React library.  It gave us the ability to pass data through a component with ease.  A great way to stream line writing code.
 
-🚫List the rest of the front end features and libraries in the same format as the framework above.
+#### Front end deployed to `http://groovn-frontend-prod.netlify.com/`
 
-#### Front end deployed to `🚫insert service here`
+#### [Back end](https://github.com/Lambda-School-Labs/groovn-music-be) built using:
 
-#### [Back end](🚫link to back end repo here) built using:
+####
 
-#### 🚫 back end framework goes here
-
--    point one
--    point two
--    point three
-
-🚫 List the rest of the back end end features and libraries in the same format as the framework above
+-    Apollo GraphQL - writing queries, combining APIs and databases
+-    Node.js - JS runtime environent
+-    Express - web framework for Node.js
+-    MongoDB - database 
+-    Mongoose - query building and schema
 
 # APIs
 
-## 2️⃣ Authentication API here
+## Spotify API 
 
-🚫Replace text below with a description of the API
+We decided to use the Spotify API mainly for build time and production.  We wanted our users to have the ability to create a playlist and play their music.  By using Spotify's API, it's based on REST principles and the endpoints return JSON metadata about music artists, albums, and tracks, directly from the Spotify Data Catalogue.  It also provides access to user related data, like playlists and music that the user saves in their music library.
 
-Water's like me. It's laaazy ... Boy, it always looks for the easiest way to do things A little happy sunlight shining through there. Let all these little things happen. Don't fight them. Learn to use them. Even the worst thing we can do here is good.
+class SpotifyAPI extends RESTDataSource {
+  constructor() {
+    super();
+    this.baseURL = 'https://api.spotify.com/v1/me';
+  }
 
-## 2️⃣ Payment API here
+  async getSavedTracks(token) {
+    return await this.get('tracks', null, {
+      headers: {
+        Authorization: 'Bearer ' + token,
+      },
+    });
+  }
+}
 
-🚫Replace text below with a description of the API
+export default SpotifyAPI;
 
-This is the way you take out your flustrations. Get away from those little Christmas tree things we used to make in school. Isn't it fantastic that you can change your mind and create all these happy things? Everything's not great in life, but we can still find beauty in it.
+## Context API
 
-## 3️⃣ Misc API here
+We used the Context API solely-based on using the React library.  Utilizing Context, it creates an object for us.  Once React renders a componentk that subscribes to a Context object, it will read the context value closest to the matching Provider above in the tree. 
 
-🚫Replace text below with a description of the API
+export default function App() {
+  return (
+    <MainContextProvider>
+      <div className="app">
+        <Route to exact path="/landing-page" component={LandingPage} />
+        <Route exact to="/protected" component={PrivateRoute} />
+      </div>
+    </MainContextProvider>
+  );
+}
 
-You can do anything your heart can imagine. In life you need colors. This is where you take out all your hostilities and frustrations. It's better than kicking the puppy dog around and all that so. I'm sort of a softy, I couldn't shoot Bambi except with a camera. Trees get lonely too, so we'll give him a little friend. We'll lay all these little funky little things in there.
+# Environment Variables
 
-## 3️⃣ Misc API here
+DEV_DATABASE_URL=‘mongodb://localhost:27017/groovn’ - app database
+SPOTIFY_CLIENT_ID=‘abe6bf42ad914ede9a28b1c8db260cb8’ - Spotify user ID
+SPOTIFY_CLIENT_SECRET=‘891af5d42954449f9c9660b6f11dfa3b’ - key used for Spotify users logging in and out
+SESSION_SECRET=‘d%wP3p&uQ&8&%TzZh@uzf!y#J%*!WR4X’ - key used for signing and/or encrypting cookies set by our app
+PORT=‘4000’ - port used for our app
+NODE_ENV = ‘Development’ - development environment
 
-🚫Replace text below with a description of the API
+# Content Licenses
 
-When you do it your way you can go anywhere you choose. Let your heart take you to wherever you want to be. If I paint something, I don't want to have to explain what it is. A tree needs to be your friend if you're going to paint him. That's a son of a gun of a cloud. Even the worst thing we can do here is good.
+| Image/License(s) Filename | Source / Creator | License                                                                      |
+| ------------------------- | ---------------- | ---------------------------------------------------------------------------- |
+| Spotify API               | Team             | [Spotify API](https://developer.spotify.com/terms/#iii) |
 
-## 3️⃣ Misc API here
+# Testing
 
-🚫Replace text below with a description of the API
+Testing of this application was very important and crucial for the overall success of the app and its functionality.  
 
-Volunteering your time; it pays you and your whole community fantastic dividends. Maybe there's a happy little waterfall happening over here. You can spend all day playing with mountains. We don't have to be committed. We are just playing here. You have freedom here. The only guide is your heart. It's cold, but it's beautiful.
+Each developer did a series of tests on both front-end and back-end to ensure the overall functionality was working.  The following tests were completed throughout the build:
+  - user authentication
+  - routes
+  - database
+  - queries created
+  - playlist creation
+  - recommendation engine
+  - recommended playlist
+  - component functionality 
 
-# 3️⃣ Environment Variables
+In addition, all pull requests were reviewed by one or more team members, and merges were supervised by our project manager.
 
-In order for the app to function correctly, the user must set up their own environment variables. There should be a .env file containing the following:
+The application for the most part was set up to continuously deploy to Netlify and Heroku. 
 
-🚫These are just examples, replace them with the specifics for your app
+# Installation Instructions
 
-    *  REACT_APP_apiKey - this is your Google API key, which can be generated in the Google Cloud Console
-    *  REACT_APP_authDomain - when you set up your Firebase project, this information will be in the dashboard
-    *  REACT_APP_databaseURL - in the Firebase dashboard
-    *  REACT_APP_projectID - in the Firebase dashboard
-    *  REACT_APP_storageBucket - in the Firebase dashboard
-    *  REACT_APP_messagingSenderId - in the Firebase dashboard
-    *  REACT_APP_stripe_API - this is your public Stripe API key, generated in the Stripe dashboard
-    *  REACT_APP_backendURL - optional for your local development server
-    *  REACT_APP_clientid - this is the Stripe_connect clientID, generated in Stripe_connect settings
-    *  REACT_APP_stripe_plan - this is the ID for a second Stripe subscription plan, generated under Stripe products
+Environment Variables
 
-# 5️⃣ Content Licenses
+DEV_DATABASE_URL=‘mongodb://localhost:27017/groovn’ - app database
+SPOTIFY_CLIENT_ID=‘abe6bf42ad914ede9a28b1c8db260cb8’ - Spotify user ID
+SPOTIFY_CLIENT_SECRET=‘891af5d42954449f9c9660b6f11dfa3b’ - key used for Spotify users logging in and out
+SESSION_SECRET=‘d%wP3p&uQ&8&%TzZh@uzf!y#J%*!WR4X’ - key used for signing and/or encrypting cookies set by our app
+PORT=‘4000’ - port used for our app
+NODE_ENV = ‘Development’ - development environment
 
-🚫For all content - images, icons, etc, use this table to document permission of use. Remove the two placeholders and add you content to this table
+- Please see Passport.js Spotify strategy for additional variable http://www.passportjs.org/packages/passport-spotify/
 
-| Image Filename | Source / Creator | License                                                                      |
-| -------------- | ---------------- | ---------------------------------------------------------------------------- |
-| doodles.png    | Nicole Bennett   | [Creative Commons](https://www.toptal.com/designers/subtlepatterns/doodles/) |
-| rings.svg      | Sam Herbert      | [MIT](https://github.com/SamHerbert/SVG-Loaders)                             |
+[build]
+base = "groovin-music/"
+publish = "build/"
+command = "yarn build"
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200
 
-# 4️⃣ Testing
+Using the application
 
-🚫Document what you used for testing and why
+Requirements:
 
-# 4️⃣ Installation Instructions
+- Node
+- Package Manager (such as Yarn or npm)
+- Yarn was used to build this project.
+Have Node? Have Yarn or npm? Follow these steps:
 
-🚫explain how to install the required dependencies to get this project up and running with yarn and NPM
+Fork and clone repo
 
-## Other Scripts
+Add an .env file to both client and server sides at the root of the folder (same level as the package.json file).
 
-🚫replace these examples with your own
+Add environmental variables for both the frontend and the backend.
 
-    * typecheck - runs the TypeScript compiler
-    * build - creates a build of the application
-    * start - starts the production server after a build is created
-    * test - runs tests in **tests** directory \* eject - copy the configuration files and dependencies into the project so you have full control over them
+Open terminal and cd into the server folder and run yarn install to install the necessary node_modules on the backend.
+
+cd into the client folder and run yarn install to install the necessary node_modules on the frontend.
+
+Run yarn start on the client folder to run the frontend on localhost:3000
+
+Run yarn start on the server folder to run the backend on localhost:4000
+
+Your application is now running and can be tested locally.
+
+Spotify Account creation
+
+In order to use the application, the user needs to have a Spotify account (free or premium).  If the user does not have an account, follow these steps:
+
+1. Go to www.spotify.com
+2. Click on "Sign In" from top-right corner of website
+3. Fill out all required fields
+4. Click "Sign Up"
 
 # Contributing
 
