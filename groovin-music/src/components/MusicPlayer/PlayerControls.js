@@ -16,7 +16,7 @@ function PlayerControls() {
     togglePlay,
     playPreviousTrack,
     playNextTrack,
-    playTrack,
+    
   } = UseMusicPlayer();
 
   return (

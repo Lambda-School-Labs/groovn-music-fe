@@ -12,8 +12,6 @@ function LandingPage() {
         <div className="tagline">
           <h3>get into the groove....</h3>
         </div>
-
-        <div className="search"></div>
         <LandingHome />
       </body>
     </>

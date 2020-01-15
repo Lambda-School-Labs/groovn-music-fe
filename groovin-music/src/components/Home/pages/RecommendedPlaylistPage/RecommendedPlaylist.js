@@ -3,7 +3,7 @@ import { Redirect } from 'react-router-dom';
 import { gql } from 'apollo-boost';
 import { useQuery, useMutation } from '@apollo/react-hooks';
 import { MainContext } from '../../../Context/MainContext';
-import Playlist from '../PlaylistPage/Playlist.js';
+import './RecommendedPlaylist.css';
 
 const CREATE_RECOMMENDED_PLAYLIST = gql`
   mutation CreateRecommendedPlaylist($name: String!, $description: String) {
@@ -86,8 +86,9 @@ const RecommendedPlayist = props => {
     return <Redirect to="/player-page" />;
   } else {
     return (
-      <div>
+      <div className="rec-playlist-container">
         <form onSubmit={createPlaylist}>
+          <h2>Create a recommened playlist based on your liked songs </h2>
           <input
             type="text"
             placeholder="Playlist Name"
